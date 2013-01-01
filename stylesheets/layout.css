@@ -1,0 +1,50 @@
+/* This basic layout borrows heavily from Matthew Levine's "In Search of the Holy Grail"
+ * http://www.alistapart.com/articles/holygrail
+ * Refer to the article for detailed step-by-step explanation of the layout
+ */
+
+html, body, #container{
+	height: 100%;
+}
+
+#container {
+	min-width: 950px;		/* 2 x nav-menu width + right-notification-widget width, to prevent
+												 the layout from being broken on browser resizing */
+}
+
+#wrapper {
+	padding-left: 350px;
+	padding-right: 250px;
+
+	overflow: hidden;						/* Needed to make menu take full height of its children, as
+																 the floating elements cause its height to reduce to 0 */
+}
+
+.wrapper-column {
+	position: relative;
+	float: left;
+}
+
+#content {
+	width: 100%;
+}
+
+#nav-menu {
+	width: 350px;
+	margin-left: -100%;
+	right: 350px;
+}
+
+#right-notification-widget {
+	width: 250px;
+	margin-right: -250px;
+}
+
+#footer {
+	clear: both;							/* Needed to prevent footer from floating as well */
+}
+
+* html #nav-menu {					/* This is a hack for IE6, just remember that the offset is the
+															 size of the right-notification-widget */
+	left: 350px;
+}

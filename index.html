@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Mukti '13</title>
 	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
 </head>
 <body>
 	<div id="container">
@@ -11,10 +12,17 @@
 			<div id="top-right-user-bar">
 				<!-- Contains the login/register and a couple of other options-->
 			</div>
+
+			<p>This is a placeholder text for the header</p>
 		</div>
 
-		<div id="menu">
-			<div id="nav-menu">
+		<div id="wrapper">
+			<div id="content" class="wrapper-column">
+				<!-- Display the content corresponding to the selected menu option -->
+				<p>This is a placeholder text for the content corresponding to the selected node</p>
+			</div>
+
+			<div id="nav-menu" class="wrapper-column">
 				<ul id="nav-menu-list">
 					<li><a href="#">Mukti</a></li>
 					<li><a href="#">Events</a></li>
@@ -25,17 +33,15 @@
 				</ul>
 			</div>
 
-			<div id="content">
-				<!-- Display the content corresponding to the selected menu option -->
-			</div>
-
-			<div id="right-notification-widget">
+			<div id="right-notification-widget" class="wrapper-column">
 				<!-- Ajax powered endless scroll notification widget -->
+				<p>This is a placeholder text for the notification widget</p>
 			</div>
 		</div>
 
 		<div id="footer">
 			<!-- Integrate social media -->
+			<p>This is placeholder text for the footer</p>
 		</div>
 	</div>
 </body>
