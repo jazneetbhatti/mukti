@@ -33,6 +33,7 @@ html, body, #container{
 	width: 350px;
 	margin-left: -100%;
 	right: 350px;
+	height: 350px;
 }
 
 #right-notification-widget {
@@ -47,4 +48,16 @@ html, body, #container{
 * html #nav-menu {					/* This is a hack for IE6, just remember that the offset is the
 															 size of the right-notification-widget */
 	left: 350px;
+}
+
+.nav-menu-list {
+	position: relative;
+	top: 50%;
+	left: 50%;
+}
+
+.nav-menu-list li{
+	background-color: yellow;
+	margin-left: -50px;
+	margin-top: -50px;
 }
