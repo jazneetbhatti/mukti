@@ -1,0 +1,205 @@
+{
+  "mukti": {
+    "text": "Mukti",
+    "childNodes": [ "about", "events", "workshops", "sponsors", "contact", "register", "schedule" ],
+    "parent": "none"
+  },
+
+  "about": {
+    "text": "About",
+    "childNodes": [ "about-mukti", "about-lug", "team-mukti" ],
+    "parent": "mukti"
+  },
+
+  "events": {
+    "text": "Events",
+    "childNodes": [ "technical-events", "non-technical-events", "online-events" ],
+    "parent": "mukti"
+  },
+
+  "workshops": {
+    "text": "Workshops",
+    "childNodes": [ "python", "webdev", "gsocbarcamp", "mediawiki" ],
+    "parent": "mukti"
+  },
+
+  "sponsors": {
+    "text": "Sponsors",
+    "childNodes": [ "current-sponsors", "sponsor-us" ],
+    "parent": "mukti"
+  },
+
+  "contact": {
+    "text": "Contact",
+    "childNodes": [ "contact-us", "reach-us" ],
+    "parent": "mukti"
+  },
+
+  "register": {
+    "text": "Register",
+    "childNodes": {},
+    "parent": "mukti"
+  },
+
+  "schedule": {
+    "text": "Schedule",
+    "childNodes": {},
+    "parent": "mukti"
+  },
+
+  "about-mukti": {
+    "text": "About Mukti",
+    "childNodes": {},
+    "parent": "about"
+	},
+
+  "about-lug": {
+    "text": "About LUG",
+    "childNodes": {},
+    "parent": "about"
+  },
+
+  "team-mukti": {
+    "text": "Team Mukti",
+    "childNodes": {},
+    "parent": "about"
+  },
+
+  "technical-events": {
+    "text": "Technical Events",
+    "childNodes": [ "brainmesh", "bts", "htc", "konfigure", "incanity" ],
+    "parent": "events"
+  },
+
+  "non-technical-events": {
+    "text": "Non-Technical Events",
+    "childNodes": [ "lipi", "imagimp" ],
+    "parent": "events"
+  },
+
+  "online-events": {
+    "text": "Online Events",
+    "childNodes": [ "codecracker", "oth", "freepl", "freemex", "footballpl" ],
+    "parent": "events"
+  },
+
+  "python": {
+    "text": "Python Workshop",
+    "childNodes": {},
+    "parent": "workshops"
+  },
+
+  "webdev": {
+    "text": "Web Development Workshop",
+    "childNodes": {},
+    "parent": "workshops"
+  },
+
+  "gsocbarcamp": {
+    "text": "GSOC Bar Camp",
+    "childNodes": {},
+    "parent": "workshops"
+  },
+
+  "mediawiki": {
+    "text": "MediaWiki Talk",
+    "childNodes": {},
+    "parent": "workshops"
+  },
+
+  "current-sponsors": {
+    "text": "Our Sponsors",
+    "childNodes": {},
+    "parent": "sponsors"
+  },
+
+  "sponsor-us": {
+    "text": "Sponsor Us",
+    "childNodes": {},
+    "parent": "sponsors"
+  },
+
+  "contact-us": {
+    "text": "Contact Us",
+    "childNodes": {},
+    "parent": "contact"
+  },
+
+  "reach-us": {
+    "text": "Reach Us",
+    "childNodes": {},
+    "parent": "contact"
+  },
+
+  "brainmesh": {
+    "text": "Brainmesh",
+    "childNodes": {},
+    "parent": "technical-events"
+  },
+
+  "bts": {
+    "text": "Behind The Scene",
+    "childNodes": {},
+    "parent": "technical-events"
+  },
+
+  "htc": {
+    "text": "Hack The Code",
+    "childNodes": {},
+    "parent": "technical-events"
+  },
+
+  "konfigure": {
+    "text": "Konfigure",
+    "childNodes": {},
+    "parent": "technical-events"
+  },
+
+  "incanity": {
+    "text": "InCanity",
+    "childNodes": {},
+    "parent": "technical-events"
+  },
+
+  "lipi": {
+    "text": "Lipi",
+    "childNodes": {},
+    "parent": "non-technical-events"
+  },
+
+  "imagimp": {
+    "text": "ImaGIMP",
+    "childNodes": {},
+    "parent": "non-technical-events"
+  },
+
+  "codecracker": {
+    "text": "Codecracker",
+    "childNodes": {},
+    "parent": "online-events"
+  },
+
+  "oth": {
+    "text": "Online Treasure Hunt",
+    "childNodes": {},
+    "parent": "online-events"
+  },
+
+  "freepl": {
+    "text": "FreePL",
+    "childNodes": {},
+    "parent": "online-events"
+  },
+
+  "freemex": {
+    "text": "Freemex",
+    "childNodes": {},
+    "parent": "online-events"
+  },
+
+  "footballpl": {
+    "text": "FootballPL",
+    "childNodes": {},
+    "parent": "online-events"
+  }
+}
