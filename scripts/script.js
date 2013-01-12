@@ -19,38 +19,63 @@ $(document).ready(function() {
 		$('.nav-menu-list').trigger('mouseout');
   }
 
+	/* Updates the content section */
+	function updateContent(key){
+		var item = fetchedData[key];
+
+		/* Update section only if a new node is clicked. In other words,
+		 * do not update if the section already has contents corresponding to the node clicked
+		 */
+		if( !$('#content').hasClass(key) )
+		{
+		  /* Fade out the contents, empty the section, update the class name associated
+			 * ( wrapper-column should always remain for layout reasons ), fill in the 
+			 * content as children and then fade back in.
+			 */
+			$('#content').fadeOut(function(){
+		  	$(this).empty().attr('class', 'wrapper-column ' + key ).append('<p>Content for ' + item.text + '</p>').fadeIn();
+			});
+		}
+	}
+
 	/* Handler for a click on a child node */
 	function clickedNode(key){
 		console.log("clickedNode");
 		var item = fetchedData[key];
 
-		/* Open a sub-menu only if the node has children */
-		if( !$.isEmptyObject( item.childNodes ) )
-		{
-			$('.nav-menu-list').fadeOut('fast', function() {
+		/* No need to reinitialize the menu if the centre node was clicked */
+		if( currentObject != item ){
+			/* Open a sub-menu only if the node has children */
+			if( !$.isEmptyObject( item.childNodes ) )
+			{
+				$('.nav-menu-list').fadeOut('fast', function() {
 
-				/* Remove the complete menu list element and then recreate it.
-				   Just emptying its contents and repopulating with list items doesn't
-				   work as desired because the plugin applies styles to the menu
-				   list element and initiating the circle menu again causes problems*/
-				$('.nav-menu-list').remove();
-				$('#nav-menu').append('<ul class="nav-menu-list"></ul>');
+					/* Remove the complete menu list element and then recreate it.
+					   Just emptying its contents and repopulating with list items doesn't
+					   work as desired because the plugin applies styles to the menu
+					   list element and initiating the circle menu again causes problems*/
+					$('.nav-menu-list').remove();
+					$('#nav-menu').append('<ul class="nav-menu-list"></ul>');
 
-				currentObject = item;
-				setUpMenu();
-				$('.nav-menu-list').hide();
-				applyCircleMenu();
-				$('.nav-menu-list').fadeIn();
-			});	
+					currentObject = item;
+					setUpMenu(key);
+					$('.nav-menu-list').hide();
+					applyCircleMenu();
+					$('.nav-menu-list').fadeIn();
+				});
+			}
+		}
+		updateContent(key);
 	}
-}
 
-  function setUpMenu(){
+  function setUpMenu(key){
   	console.log("setUpMenu");
   	var item = currentObject;
-		console.log("1");
   	var centreNodeText = item.text;
- 		$('.nav-menu-list').append('<li>' + centreNodeText + '</li>');
+ 		$('.nav-menu-list').append('<li id="' + key + '" >' + centreNodeText + '</li>');
+ 		$('#' + key).click(function() {
+				clickedNode(key);
+		});
 
 		$.each(item.childNodes, function() {
 			var id = this.toString();
@@ -75,7 +100,8 @@ $(document).ready(function() {
 	$.getJSON('scripts/menuContents.json', function(data) {
 		fetchedData = data;
 		currentObject = fetchedData['mukti'];
-		setUpMenu();
+		setUpMenu('mukti');
 		applyCircleMenu();
+		updateContent('mukti');
 	});
 });
