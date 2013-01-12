@@ -53,7 +53,7 @@ $(document).ready(function() {
  		$('.nav-menu-list').append('<li>' + centreNodeText + '</li>');
 
 		$.each(item.childNodes, function() {
-			var id = this;
+			var id = this.toString();
 			var nodeText = fetchedData[id].text;
 			$('.nav-menu-list').append('<li id="' + id + '" >' + nodeText + '</li>');
 
