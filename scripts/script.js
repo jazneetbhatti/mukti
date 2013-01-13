@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+/* 
+ * ------------------------------ WRAPPER BEGIN ---------------------------------------------------
+ * Contains scripts for the 'wrapper' section
+ */
+
 	var fetchedData, currentObject; // currentObject corresponds to the centre node in the menu
 
 	/* Invokes the circular menu plugin */
@@ -13,8 +19,9 @@ $(document).ready(function() {
 	    });
 
 		/* Simulate a hover to open the menu on initialization.
-		   Triggering just a mouseover event does not close the
-		   menu when the mouse is idle */
+		 * Triggering just a mouseover event does not close the
+		 * menu when the mouse is idle
+		 */
 		$('.nav-menu-list').trigger('mouseover');
 		$('.nav-menu-list').trigger('mouseout');
   }
@@ -103,5 +110,33 @@ $(document).ready(function() {
 		setUpMenu('mukti');
 		applyCircleMenu();
 		updateContent('mukti');
+	});
+
+/* ------------------------------ WRAPPER END --------------------------------------------------- */
+
+/* 
+ * ------------------------------ FOOTER BEGIN ---------------------------------------------------
+ * Contains scripts for the 'footer' section
+ */	
+
+	/* Responsible for removing default content from form field on focus
+	 * and restoring default content in case focus is lifted and no data
+	 * has been entered
+	 */
+	$('input.clear').each(function(index) {
+		$(this)
+		.data('default', $(this).val())
+		.addClass('inactive')
+		.focus(function(){
+			$(this).removeClass('inactive');
+			if( $(this).val() === $(this).data('default') || $(this).val() === "" ) {
+				$(this).val("");
+			}
+		})
+		.blur(function() {
+			if( $(this).val() === "" ) {
+				$(this).addClass('inactive').val( $(this).data('default') );
+			}	
+		});
 	});
 });

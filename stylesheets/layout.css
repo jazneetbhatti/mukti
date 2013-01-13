@@ -15,7 +15,6 @@ html, body, #container{
 #wrapper {
 	padding-left: 350px;
 	padding-right: 250px;
-
 	overflow: hidden;						/* Needed to make menu take full height of its children, as
 																 the floating elements cause its height to reduce to 0 */
 }
@@ -43,6 +42,8 @@ html, body, #container{
 
 #footer {
 	clear: both;							/* Needed to prevent footer from floating as well */
+	padding: 45px 0 45px;
+	height: 150px;
 }
 
 * html #nav-menu {					/* This is a hack for IE6, just remember that the offset is the
@@ -60,6 +61,106 @@ html, body, #container{
 	background-color: yellow;
 	margin-left: -50px;
 	margin-top: -50px;
-
 	cursor: pointer;
+}
+
+#footer-wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.footer-column {
+	float: left;
+	width: 250px;
+	margin: 0 50px 0 0;
+}
+
+.footer-column h4{
+	margin: 0 0 20px;
+}
+
+#footer-follow {
+	float: left;
+}
+
+#footer-follow li {
+	width: 58px;
+	height: 58px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#footer a {
+	text-decoration: none;
+	display: block;
+	position: relative;
+	top: 25px;
+	font-size: 0.75em;
+}
+
+#footer-follow span {
+	background: url(images/social-media-sprite.png);
+	height: 58px;
+	width: 58px;
+	display: block;
+	position: absolute;
+	top: -25px;
+	left: 0;
+	cursor: pointer;
+	background-color: white;
+	border-radius: 50%;
+}
+
+#facebook span {
+	background-position: 0 0;
+}
+
+#facebook span:hover {
+	background-position: -62px 0;
+	background-color: #233678;
+}
+
+#twitter span {
+	background-position: -124px 0;
+}
+
+#twitter span:hover {
+	background-position: -187px 0;
+	background-color: #00aced;
+}
+
+#googleplus span {
+	background-position: -255px 0;
+}
+
+/* Create the '+' sign since the PNG contains only the 'g' sybmbol */
+#googleplus span:after {
+	left: 1.3em;
+	top: 0.1em;
+	position: absolute;
+	display: block;
+	content: "+";
+	font-size: 2.2em;
+	font-weight: bold;
+	color: #cf3717;
+	font-family: georgia;
+}
+
+#googleplus span:hover {
+	background-position: -317px 0;
+	background-color: #cf3717;
+}
+
+/* Change color of '+' on hover( Be careful about the syntax.
+ * :hover is a class selector while :after is an element selector ) */
+#googleplus span:hover:after {
+	color: white;
+}
+
+#mailing-list {
+	margin-top: 10px;
+}
+
+#mailing-list div{
+	float: left;
 }
