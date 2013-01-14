@@ -12,9 +12,13 @@ html, body, #container{
 												 the layout from being broken on browser resizing */
 }
 
+#header {
+	height: 100px;
+}
+
 #wrapper {
-	padding-left: 350px;
-	padding-right: 250px;
+	padding-left: 400px;
+	padding-right: 50px;    /* Should be reset back to 250px when the notification widget is implemented */
 	overflow: hidden;						/* Needed to make menu take full height of its children, as
 																 the floating elements cause its height to reduce to 0 */
 }
@@ -25,14 +29,15 @@ html, body, #container{
 }
 
 #content {
+	height: 455px;
 	width: 100%;
 }
 
 #nav-menu {
-	width: 350px;
+	width: 400px;
 	margin-left: -100%;
-	right: 350px;
-	height: 350px;
+	right: 400px;
+	height: 400px;
 }
 
 #right-notification-widget {
@@ -42,8 +47,8 @@ html, body, #container{
 
 #footer {
 	clear: both;							/* Needed to prevent footer from floating as well */
-	padding: 45px 0 45px;
-	height: 150px;
+	padding: 13px 0 13px;
+	height: 100px;
 }
 
 * html #nav-menu {					/* This is a hack for IE6, just remember that the offset is the
@@ -59,8 +64,8 @@ html, body, #container{
 
 .nav-menu-list li{
 	background-color: yellow;
-	margin-left: -50px;
-	margin-top: -50px;
+	margin-left: -63px;				/* Magnitude should be equal to radius of node */
+	margin-top: -63px;
 	cursor: pointer;
 }
 

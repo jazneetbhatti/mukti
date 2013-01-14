@@ -12,8 +12,8 @@ $(document).ready(function() {
   	console.log("applyCircleMenu");
   	$('.nav-menu-list').circleMenu({
 		    trigger: 'hover',
-		    item_diameter: 100,
-		    circle_radius: 125,
+		    item_diameter: 126,
+		    circle_radius: 126,
 		    direction: 'full',
 		    delay: 2000
 	    });
