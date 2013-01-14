@@ -5,7 +5,8 @@ $(document).ready(function() {
  * Contains scripts for the 'wrapper' section
  */
 
-	var fetchedData, currentObject; // currentObject corresponds to the centre node in the menu
+	var fetchedContentData, currentContentObject; // currentContentObject corresponds to the content for the centre node
+	var fetchedMenuData, currentMenuObject; // currentMenuObject corresponds to the centre node in the menu
 
 	/* Invokes the circular menu plugin */
   function applyCircleMenu(){
@@ -28,7 +29,7 @@ $(document).ready(function() {
 
 	/* Updates the content section */
 	function updateContent(key){
-		var item = fetchedData[key];
+		var item = fetchedMenuData[key];
 
 		/* Update section only if a new node is clicked. In other words,
 		 * do not update if the section already has contents corresponding to the node clicked
@@ -40,7 +41,13 @@ $(document).ready(function() {
 			 * content as children and then fade back in.
 			 */
 			$('#content').fadeOut(function(){
-		  	$(this).empty().attr('class', 'wrapper-column ' + key ).append('<p>Content for ' + item.text + '</p>').fadeIn();
+				currentContentObject = fetchedContentData[key];
+				var heading = currentContentObject.heading;
+				var content = currentContentObject.content;
+
+		  	$(this).empty().attr('class', 'wrapper-column ' + key )
+		  	.append('<h1>' + heading + '</h1>')
+		  	.append('<p>' + content + '</p>').fadeIn();
 			});
 		}
 	}
@@ -48,10 +55,10 @@ $(document).ready(function() {
 	/* Handler for a click on a child node */
 	function clickedNode(key){
 		console.log("clickedNode");
-		var item = fetchedData[key];
+		var item = fetchedMenuData[key];
 
 		/* No need to reinitialize the menu if the centre node was clicked */
-		if( currentObject != item ){
+		if( currentMenuObject != item ){
 			/* Open a sub-menu only if the node has children */
 			if( !$.isEmptyObject( item.childNodes ) )
 			{
@@ -64,7 +71,7 @@ $(document).ready(function() {
 					$('.nav-menu-list').remove();
 					$('#nav-menu').append('<ul class="nav-menu-list"></ul>');
 
-					currentObject = item;
+					currentMenuObject = item;
 					setUpMenu(key);
 					$('.nav-menu-list').hide();
 					applyCircleMenu();
@@ -77,7 +84,7 @@ $(document).ready(function() {
 
   function setUpMenu(key){
   	console.log("setUpMenu");
-  	var item = currentObject;
+  	var item = currentMenuObject;
   	var centreNodeText = item.text;
  		$('.nav-menu-list').append('<li id="' + key + '" >' + centreNodeText + '</li>');
  		$('#' + key).click(function() {
@@ -86,7 +93,7 @@ $(document).ready(function() {
 
 		$.each(item.childNodes, function() {
 			var id = this.toString();
-			var nodeText = fetchedData[id].text;
+			var nodeText = fetchedMenuData[id].text;
 			$('.nav-menu-list').append('<li id="' + id + '" >' + nodeText + '</li>');
 
 			$('#' + id).click(function() {
@@ -96,7 +103,7 @@ $(document).ready(function() {
 
 		if( item.parent != "none" ){
 			var parentId = item.parent;
-			var nodeText = fetchedData[parentId].text;
+			var nodeText = fetchedMenuData[parentId].text;
 			$('.nav-menu-list').append('<li id="' + parentId + '" >' + nodeText + '</li>');
 			$('#' + parentId).click(function() {
 				clickedNode(parentId);
@@ -104,9 +111,13 @@ $(document).ready(function() {
 		}
   }
 
+	$.getJSON('scripts/content.json', function(data) {
+		fetchedContentData = data;
+	});
+
 	$.getJSON('scripts/menuContents.json', function(data) {
-		fetchedData = data;
-		currentObject = fetchedData['mukti'];
+		fetchedMenuData = data;
+		currentMenuObject = fetchedMenuData['mukti'];
 		setUpMenu('mukti');
 		applyCircleMenu();
 		updateContent('mukti');

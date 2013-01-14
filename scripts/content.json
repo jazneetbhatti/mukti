@@ -1,0 +1,171 @@
+{
+  "mukti": {
+    "heading": "Mukti",
+    "content": "Content goes here"
+  },
+
+  "about": {
+    "heading": "About",
+    "content": "Content goes here"
+  },
+
+  "events": {
+    "heading": "Events",
+    "content": "Content goes here"
+  },
+
+  "workshops": {
+    "heading": "Workshops",
+    "content": "Content goes here"
+  },
+
+  "sponsors": {
+    "heading": "Sponsors",
+    "content": "Content goes here"
+  },
+
+  "contact": {
+    "heading": "Contact",
+    "content": "Content goes here"
+  },
+
+  "register": {
+    "heading": "Register",
+    "content": "Content goes here"
+  },
+
+  "schedule": {
+    "heading": "Schedule",
+    "content": "Content goes here"
+  },
+
+  "about-mukti": {
+    "heading": "About Mukti",
+    "content": "Content goes here"
+	},
+
+  "about-lug": {
+    "heading": "About LUG",
+    "content": "Content goes here"
+  },
+
+  "team-mukti": {
+    "heading": "Team Mukti",
+    "content": "Content goes here"
+  },
+
+  "technical-events": {
+    "heading": "Technical",
+    "content": "Content goes here"
+  },
+
+  "non-technical-events": {
+    "heading": "Fun",
+    "content": "Content goes here"
+  },
+
+  "online-events": {
+    "heading": "Online Events",
+    "content": "Content goes here"
+  },
+
+  "python": {
+    "heading": "Python",
+    "content": "Content goes here"
+  },
+
+  "webdev": {
+    "heading": "Web Development",
+    "content": "Content goes here"
+  },
+
+  "gsocbarcamp": {
+    "heading": "GSOC Bar Camp",
+    "content": "Content goes here"
+  },
+
+  "mediawiki": {
+    "heading": "MediaWiki Hackathon",
+    "content": "Content goes here"
+  },
+
+  "current-past-sponsors": {
+    "heading": "Our Sponsors",
+    "content": "Content goes here"
+  },
+
+  "sponsor-us": {
+    "heading": "Sponsor Us",
+    "content": "Content goes here"
+  },
+
+  "contact-us": {
+    "heading": "Contact Us",
+    "content": "Content goes here"
+  },
+
+  "reach-us": {
+    "heading": "Reach Us",
+    "content": "Content goes here"
+  },
+
+  "brainmesh": {
+    "heading": "Brainmesh",
+    "content": "Content goes here"
+  },
+
+  "bts": {
+    "heading": "Behind The Scene",
+    "content": "Content goes here"
+  },
+
+  "htc": {
+    "heading": "Hack The Code",
+    "content": "Content goes here"
+  },
+
+  "konfigure": {
+    "heading": "Konfigure",
+    "content": "Content goes here"
+  },
+
+  "incanity": {
+    "heading": "InCanity",
+    "content": "Content goes here"
+  },
+
+  "lipi": {
+    "heading": "Lipi",
+    "content": "Content goes here"
+  },
+
+  "imagimp": {
+    "heading": "ImaGIMP",
+    "content": "Content goes here"
+  },
+
+  "codecracker": {
+    "heading": "Codecracker",
+    "content": "Content goes here"
+  },
+
+  "oth": {
+    "heading": "Online Treasure Hunt",
+    "content": "Content goes here"
+  },
+
+  "freepl": {
+    "heading": "FreePL",
+    "content": "Content goes here"
+  },
+
+  "freemex": {
+    "heading": "Freemex",
+    "content": "Content goes here"
+  },
+
+  "footballpl": {
+    "heading": "Football PL",
+    "content": "Content goes here"
+  }
+}
