@@ -63,7 +63,6 @@ html, body, #container{
 }
 
 .nav-menu-list li{
-	background-color: yellow;
 	margin-left: -63px;				/* Magnitude should be equal to radius of node */
 	margin-top: -63px;
 	cursor: pointer;

@@ -86,7 +86,7 @@ $(document).ready(function() {
   	console.log("setUpMenu");
   	var item = currentMenuObject;
   	var centreNodeText = item.text;
- 		$('.nav-menu-list').append('<li id="' + key + '" >' + centreNodeText + '</li>');
+ 		$('.nav-menu-list').append('<li class="centre-node" id="' + key + '" >' + centreNodeText + '</li>');
  		$('#' + key).click(function() {
 				clickedNode(key);
 		});
@@ -94,7 +94,7 @@ $(document).ready(function() {
 		$.each(item.childNodes, function() {
 			var id = this.toString();
 			var nodeText = fetchedMenuData[id].text;
-			$('.nav-menu-list').append('<li id="' + id + '" >' + nodeText + '</li>');
+			$('.nav-menu-list').append('<li class="child-node" id="' + id + '" >' + nodeText + '</li>');
 
 			$('#' + id).click(function() {
 				clickedNode(id);
@@ -104,7 +104,7 @@ $(document).ready(function() {
 		if( item.parent != "none" ){
 			var parentId = item.parent;
 			var nodeText = fetchedMenuData[parentId].text;
-			$('.nav-menu-list').append('<li id="' + parentId + '" >' + nodeText + '</li>');
+			$('.nav-menu-list').append('<li class="back-node" id="' + parentId + '" >' + nodeText + '</li>');
 			$('#' + parentId).click(function() {
 				clickedNode(parentId);
 			});

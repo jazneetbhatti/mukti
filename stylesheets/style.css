@@ -1,0 +1,35 @@
+/* This file sets the styles of the various components of the website */
+
+#wrapper {
+	background: url('images/grid.png');
+	background-color: #f3f3f3;
+}
+
+.nav-menu-list li {
+	border: solid;
+}
+
+.nav-menu-list li:hover {
+	color: white;
+	background-color: black;
+}
+
+.centre-node {
+	background-color: white;
+}
+
+.child-node {
+	background-color: yellow;
+}
+
+.back-node {
+	background-color: orange;
+}
+
+#footer {
+	background-color: black;
+}
+
+#footer-wrapper {
+	color: white;
+}
