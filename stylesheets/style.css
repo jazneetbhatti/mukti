@@ -1,35 +1,121 @@
 /* This file sets the styles of the various components of the website */
 
+@font-face {
+  font-family: 'NunitoRegular';
+  src: url('../fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monda-Regular';
+  src: url('../fonts/Monda-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monda-Bold';
+  src: url('../fonts/Monda-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PaytoneOne';
+  src: url('../fonts/PaytoneOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UnicaOne-Regular';
+  src: url('../fonts/UnicaOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#container{
+  background-color: black;
+}
+
 #wrapper {
-	background: url('images/grid.png');
-	background-color: #f3f3f3;
+	/*background: url('images/grid.png');*/
+	background: -webkit-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
+    background: -moz-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
+    background: -o-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
+	background-color: #47F573;
+}
+
+.wrapper-column {
+	font-size: 18pt;
 }
 
 .nav-menu-list li {
-	border: solid;
+	border: none;
+	font: 16pt 'Monda-Bold';
 }
 
 .nav-menu-list li:hover {
 	color: white;
-	background-color: black;
+	background: black;
 }
 
 .centre-node {
 	background-color: white;
+	font-size: 14pt;
+	color: #23AF00;
 }
 
 .child-node {
-	background-color: yellow;
+	background: -webkit-radial-gradient(white 0%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 100%);
+	background: -moz-radial-gradient(white 0%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 100%);
+	background: -o-radial-gradient(white 0%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 100%);
+	background: radial-gradient(white 0%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 100%);
+	font-size: 14pt;
+	color: #23AF00;
 }
 
 .back-node {
-	background-color: orange;
+	background-color: #009146;
+	font-size: 14pt;
+	color: white;
 }
 
 #footer {
-	background-color: black;
+	background: -webkit-linear-gradient(#444444, #000000);
+	font: 12pt 'Monda-Regular';
 }
 
 #footer-wrapper {
 	color: white;
+}
+
+#content h1
+{
+	color: white;
+	font: 32px 'PaytoneOne';
+}
+#content p
+{
+	color: white;
+	font: 16pt 'Monda-Regular';
+	transition: opacity 500ms;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+}
+
+.invisible
+{
+	opacity: 0;
+}
+
+#header
+{
+	font: 48px 'UnicaOne-Regular';
+	color: white;
+	text-align: center;
+	width: 100%;
+	background: -webkit-linear-gradient(black, #444444);
 }

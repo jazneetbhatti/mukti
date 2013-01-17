@@ -17,7 +17,18 @@ $(document).ready(function() {
 		    circle_radius: 126,
 		    direction: 'full',
 		    delay: 2000
-	    });
+	   });
+			
+       $('.someclass').each( function(){
+         var textHeight = $(this).height();
+         var nodeHeight = $(this).parent().height(); 
+         console.log( $(this).text() );
+         console.log( $(this).parent().text() );
+         $(this).css({
+           'position': 'relative',
+           'top': ( ( nodeHeight - textHeight ) / 2 ) + 'px'
+         });
+       });
 
 		/* Simulate a hover to open the menu on initialization.
 		 * Triggering just a mouseover event does not close the
@@ -34,22 +45,22 @@ $(document).ready(function() {
 		/* Update section only if a new node is clicked. In other words,
 		 * do not update if the section already has contents corresponding to the node clicked
 		 */
-		if( !$('#content').hasClass(key) )
-		{
 		  /* Fade out the contents, empty the section, update the class name associated
 			 * ( wrapper-column should always remain for layout reasons ), fill in the 
 			 * content as children and then fade back in.
 			 */
-			$('#content').fadeOut(function(){
+			$('#content').fadeOut(function() {
+				var contentDiv = $('#content');
 				currentContentObject = fetchedContentData[key];
 				var heading = currentContentObject.heading;
 				var content = currentContentObject.content;
 
-		  	$(this).empty().attr('class', 'wrapper-column ' + key )
-		  	.append('<h1>' + heading + '</h1>')
-		  	.append('<p>' + content + '</p>').fadeIn();
+		  		$('#content h1').html(heading);
+		  		$('#content p').html(content);
+		  		contentDiv.fadeIn(function() {
+		  			contentDiv.mCustomScrollbar('update');
+		  		});
 			});
-		}
 	}
 
 	/* Handler for a click on a child node */
@@ -73,7 +84,6 @@ $(document).ready(function() {
 
 					currentMenuObject = item;
 					setUpMenu(key);
-					$('.nav-menu-list').hide();
 					applyCircleMenu();
 					$('.nav-menu-list').fadeIn();
 				});
@@ -86,15 +96,12 @@ $(document).ready(function() {
   	console.log("setUpMenu");
   	var item = currentMenuObject;
   	var centreNodeText = item.text;
- 		$('.nav-menu-list').append('<li class="centre-node" id="' + key + '" >' + centreNodeText + '</li>');
- 		$('#' + key).click(function() {
-				clickedNode(key);
-		});
+ 		$('.nav-menu-list').append('<li class="centre-node" id="' + key + '" ><div class="someclass">' + centreNodeText + '</div></li>');
 
 		$.each(item.childNodes, function() {
 			var id = this.toString();
 			var nodeText = fetchedMenuData[id].text;
-			$('.nav-menu-list').append('<li class="child-node" id="' + id + '" >' + nodeText + '</li>');
+			$('.nav-menu-list').append('<li class="child-node" id="' + id + '" ><div class="someclass">' + nodeText + '</div></li>');
 
 			$('#' + id).click(function() {
 				clickedNode(id);
@@ -104,11 +111,20 @@ $(document).ready(function() {
 		if( item.parent != "none" ){
 			var parentId = item.parent;
 			var nodeText = fetchedMenuData[parentId].text;
-			$('.nav-menu-list').append('<li class="back-node" id="' + parentId + '" >' + nodeText + '</li>');
+			$('.nav-menu-list').append('<li class="back-node" id="' + parentId + '" ><div class="someclass">' + nodeText + '</div></li>');
 			$('#' + parentId).click(function() {
 				clickedNode(parentId);
 			});
 		}
+		/*setTimeout( function () {
+			$('.someclass').each( function() {
+			console.log($(this).parent().height());
+			var ht = $(this).parent().height() / 2;
+			var newht = ht - $(this).parent().height() / 2;
+			console.log($(this).html());
+			$(this).css('top', newht + 'px');
+		});
+		}, 5000);*/
   }
 
 	$.getJSON('scripts/content.json', function(data) {
@@ -120,6 +136,14 @@ $(document).ready(function() {
 		currentMenuObject = fetchedMenuData['mukti'];
 		setUpMenu('mukti');
 		applyCircleMenu();
+			$('.someclass').each( function() {
+				console.log($(this).parent().height());
+				var ht = $(this).parent().height() / 2;
+				console.log($(this).height());
+				var newht = ht - $(this).height() / 2;
+				console.log(newht);
+				$(this).css('top', newht + 'px');
+			});
 		updateContent('mukti');
 	});
 

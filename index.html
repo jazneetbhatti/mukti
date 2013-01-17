@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="stylesheets/reset.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/jquery.mCustomScrollbar.css">
 </head>
 <body>
 	<div id="container">
@@ -14,12 +15,29 @@
 				<!-- Contains the login/register and a couple of other options-->
 			</div>
 
-			<p>This is a placeholder text for the header</p>
+			<p>Mukti '13</p>
 		</div>
 
 		<div id="wrapper">
 			<div id="content" class="wrapper-column">
 				<!-- Display the content corresponding to the selected menu option -->
+				<h1>heading</h1>
+				<p>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				hahahaha<br/>
+				</p>
 			</div>
 
 			<div id="nav-menu" class="wrapper-column">
@@ -42,7 +60,7 @@
 					<h4>Follow Us</h4>
 					<ul id="footer-follow">
 						<li>
-							<a href="http://www.facebook.com/events/170985016274456/" id="facebook" title="Facebook">
+							<a href="http://www.facebook.com/events/170985016274456/" id="facebook" title="Facebook" target="_blank">
 								Facebook
 								<span></span>								
 							</a>
@@ -50,7 +68,7 @@
 						</li>
 
 						<li>
-							<a href="https://twitter.com/mukti_nitd" id="twitter" title="Twitter">
+							<a href="https://twitter.com/mukti_nitd" id="twitter" title="Twitter" target="_blank">
 								Twitter
 								<span></span>
 							</a>
@@ -58,7 +76,7 @@
 						</li>
 
 						<li>
-							<a href="http://www.mkti.in" id="googleplus" title="Google+">
+							<a href="http://www.mkti.in" id="googleplus" title="Google+" target="_blank">
 								Google+
 								<span></span>
 							</a>
@@ -97,6 +115,16 @@
 
 	<script src="scripts/jquery-1.8.3.min.js"></script>
 	<script src="scripts/jQuery.circleMenu.js"></script>
+    <script src="scripts/jquery-ui-1.8.23.custom.min.js"></script>
 	<script src="scripts/script.js"></script>
+    <script src="scripts/jquery.mousewheel.min.js"></script>
+    <script src="scripts/jquery.mCustomScrollbar.js"></script>
+    <script>
+    (function($){
+        $(window).load(function(){
+            $("#content").mCustomScrollbar({ advanced:{ updateOnContentResize: true } });
+        });
+    })(jQuery);
+</script>
 </body>
 </html>

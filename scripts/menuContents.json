@@ -90,13 +90,13 @@
   },
 
   "webdev": {
-    "text": "Web Development",
+    "text": "Web Dev",
     "childNodes": {},
     "parent": "workshops"
   },
 
   "gsocbarcamp": {
-    "text": "GSOC Bar Camp",
+    "text": "GSOC Barcamp",
     "childNodes": {},
     "parent": "workshops"
   },

@@ -1,7 +1,8 @@
 {
   "mukti": {
     "heading": "Mukti",
-    "content": "Content goes here"
+    "content": "<p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p><p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p><p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p><p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p><p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p><p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p>"
+
   },
 
   "about": {
@@ -16,7 +17,7 @@
 
   "workshops": {
     "heading": "Workshops",
-    "content": "Content goes here"
+    "content": "<p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p><p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p><p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p><p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p><p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p><p>Content goes here Content goes here Content goes here Content goes here Content goes here Content goes here</p>"
   },
 
   "sponsors": {
@@ -80,7 +81,7 @@
   },
 
   "gsocbarcamp": {
-    "heading": "GSOC Bar Camp",
+    "heading": "GSOC Barcamp",
     "content": "Content goes here"
   },
 

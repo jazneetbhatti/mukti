@@ -120,7 +120,7 @@
                 evt.preventDefault();
                 if(self._state === 'closed' || self._state === 'closing'){
                     self.open();
-                }else{
+                } else {
                     self.close(true);
                 }
                 return false;
@@ -245,7 +245,8 @@
             'width': self.options.item_diameter+'px',
             'height': self.options.item_diameter+'px',
             'text-align': 'center',
-            'line-height': self.options.item_diameter+'px',
+            'line-height': '0 px',
+            'vertical-align': 'center',
             'position': 'absolute',
             'z-index': 1,
             'opacity': ''
