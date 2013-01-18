@@ -58,13 +58,13 @@
 
 .nav-menu-list li:hover {
 	color: white;
-	background: black;
+	background: #003010;
 }
 
 .centre-node {
 	background-color: white;
 	font-size: 14pt;
-	color: #23AF00;
+	color: #004020;
 }
 
 .child-node {
@@ -73,7 +73,7 @@
 	background: -o-radial-gradient(white 0%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 100%);
 	background: radial-gradient(white 0%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 100%);
 	font-size: 14pt;
-	color: #23AF00;
+	color: #004020;
 }
 
 .back-node {
@@ -93,13 +93,14 @@
 
 #content h1
 {
-	color: white;
+	color: #004020;
 	font: 32px 'PaytoneOne';
 }
-#content p
+
+#content-body
 {
-	color: white;
-	font: 16pt 'Monda-Regular';
+	color: #004020;
+	font: 14pt 'Monda-Regular';
 	transition: opacity 500ms;
 	-webkit-transition: opacity 500ms;
 	-moz-transition: opacity 500ms;

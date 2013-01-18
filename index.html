@@ -22,7 +22,10 @@
 			<div id="content" class="wrapper-column">
 				<!-- Display the content corresponding to the selected menu option -->
 				<h1></h1>
-				<p></p>
+
+				<div id="content-body-wrapper">
+					<div id="content-body">&nbsp;</div>
+				</div>			
 			</div>
 
 			<div id="nav-menu" class="wrapper-column">
@@ -107,9 +110,26 @@
     <script>
     (function($){
         $(window).load(function(){
-            $("#content").mCustomScrollbar({ advanced:{ updateOnContentResize: true } });
+            $("#content-body-wrapper").mCustomScrollbar({
+            	scrollButtons: {
+            		enable:true
+            	}
+            });
         });
     })(jQuery);
 </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37780219-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </body>
 </html>

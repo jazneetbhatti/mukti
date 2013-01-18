@@ -56,9 +56,9 @@ $(document).ready(function() {
 				var content = currentContentObject.content;
 
 		  		$('#content h1').html(heading);
-		  		$('#content p').html(content);
+		  		$('#content-body').html(content);
 		  		contentDiv.fadeIn(function() {
-		  			contentDiv.mCustomScrollbar('update');
+		  			$("#content-body-wrapper").mCustomScrollbar('update');
 		  		});
 			});
 	}

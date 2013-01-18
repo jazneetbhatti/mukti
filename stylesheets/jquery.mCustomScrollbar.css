@@ -165,7 +165,7 @@
 .mCSB_scrollTools .mCSB_buttonRight{
 	background-image:url(mCSB_buttons.png);
 	background-repeat:no-repeat;
-	opacity:0.4;
+	opacity:0.8;
 	filter:"alpha(opacity=40)"; -ms-filter:"alpha(opacity=40)"; /* old ie */
 }
 .mCSB_scrollTools .mCSB_buttonUp{
