@@ -27,7 +27,7 @@ html, body, #container{
 	padding-left: 400px;
 	padding-right: 50px;    /* Should be reset back to 250px when the notification widget is implemented */
 
-	height: 400px;
+	height: 444px;
 }
 
 .wrapper-column {
@@ -57,7 +57,8 @@ html, body, #container{
 #footer {
 	clear: both;							/* Needed to prevent footer from floating as well */
 
-	height: 150px;
+	padding-top: 14px;
+	height: 125px;
 }
 
 * html #nav-menu {					/* This is a hack for IE6, just remember that the offset is the
@@ -84,8 +85,12 @@ html, body, #container{
 
 .footer-column {
 	float: left;
-	width: 250px;
+	width: 550px;
 	margin: 0 50px 0 0;
+}
+
+.footer-column:first-child {
+	width: 250px;
 }
 
 .footer-column h4{

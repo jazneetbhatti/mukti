@@ -84,7 +84,7 @@
 
 #footer {
 	background: -webkit-linear-gradient(#444444, #000000);
-	font: 12pt 'Monda-Regular';
+	font: 11.5pt 'Monda-Regular';
 }
 
 #footer-wrapper {
@@ -104,11 +104,6 @@
 	-webkit-transition: opacity 500ms;
 	-moz-transition: opacity 500ms;
 	-o-transition: opacity 500ms;
-}
-
-.invisible
-{
-	opacity: 0;
 }
 
 #header

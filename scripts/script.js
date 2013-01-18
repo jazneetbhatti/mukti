@@ -116,15 +116,6 @@ $(document).ready(function() {
 				clickedNode(parentId);
 			});
 		}
-		/*setTimeout( function () {
-			$('.someclass').each( function() {
-			console.log($(this).parent().height());
-			var ht = $(this).parent().height() / 2;
-			var newht = ht - $(this).parent().height() / 2;
-			console.log($(this).html());
-			$(this).css('top', newht + 'px');
-		});
-		}, 5000);*/
   }
 
 	$.getJSON('scripts/content.json', function(data) {
@@ -136,15 +127,7 @@ $(document).ready(function() {
 		currentMenuObject = fetchedMenuData['mukti'];
 		setUpMenu('mukti');
 		applyCircleMenu();
-			$('.someclass').each( function() {
-				console.log($(this).parent().height());
-				var ht = $(this).parent().height() / 2;
-				console.log($(this).height());
-				var newht = ht - $(this).height() / 2;
-				console.log(newht);
-				$(this).css('top', newht + 'px');
-			});
-		updateContent('mukti');
+		updateContent('mukti');	
 	});
 
 /* ------------------------------ WRAPPER END --------------------------------------------------- */

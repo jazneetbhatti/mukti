@@ -67,7 +67,7 @@
 
   "technical-events": {
     "text": "Technical",
-    "childNodes": [ "brainmesh", "bts", "htc", "konfigure", "incanity" ],
+    "childNodes": [ "bts", "htc", "konfigure", "incanity" ],
     "parent": "events"
   },
 
@@ -79,7 +79,7 @@
 
   "online-events": {
     "text": "Online Events",
-    "childNodes": [ "codecracker", "oth", "freepl", "freemex" ],
+    "childNodes": [ "brainmesh", "codecracker", "oth", "freepl", "freemex" ],
     "parent": "events"
   },
 
