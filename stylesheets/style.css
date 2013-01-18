@@ -115,3 +115,11 @@
 	width: 100%;
 	background: -webkit-linear-gradient(black, #444444);
 }
+
+#club-logo{
+	opacity: 0.7;
+}
+
+#college-logo{
+	opacity: 0.7;
+}
