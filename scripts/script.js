@@ -111,7 +111,7 @@ $(document).ready(function() {
 		if( item.parent != "none" ){
 			var parentId = item.parent;
 			var nodeText = fetchedMenuData[parentId].text;
-			$('.nav-menu-list').append('<li class="back-node" id="' + parentId + '" ><div class="someclass">' + nodeText + '</div></li>');
+			$('.nav-menu-list').append('<li class="back-node" id="' + parentId + '" ><div class="someclass">' + 'Back to ' + nodeText + '</div></li>');
 			$('#' + parentId).click(function() {
 				clickedNode(parentId);
 			});
