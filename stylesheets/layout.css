@@ -69,7 +69,9 @@ html, body, #container{
 	top: 70px;
 	right: 20px;
 	position: fixed;
-	border: 1px red solid;
+	background: white;
+	border-radius: 10px;
+	z-index: 10;
 }
 
 #wrapper {
