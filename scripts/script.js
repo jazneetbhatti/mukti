@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+/*
+ * ------------------------------ HEADER BEGIN ----------------------------------------------------
+ */
+
+  function setupLoginDialog() {
+  	$('#login-button').click( function() {
+  		var dialogdiv = $('#login-dialog');
+  		if (dialogdiv.css('display') == 'none') {
+  			dialogdiv.css('display', 'block');
+  		} else {
+  			dialogdiv.css('display', 'none');
+  		}
+  	});
+  }
+  
+  setupLoginDialog();
+
+/*
+ * ------------------------------ HEADER ENDS ----------------------------------------------------
+ */
+
 /* 
  * ------------------------------ WRAPPER BEGIN ---------------------------------------------------
  * Contains scripts for the 'wrapper' section
@@ -117,7 +138,7 @@ $(document).ready(function() {
 			});
 		}
   }
-
+	
 	$.getJSON('scripts/content.json', function(data) {
 		fetchedContentData = data;
 	});

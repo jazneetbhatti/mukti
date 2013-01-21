@@ -35,7 +35,7 @@ html, body, #container{
 	height: 80px;
 	width: 80px;
 	left: 30%;
-	background: url(images/lug_logo_hd_small.png);
+	background: url('images/lug_logo_hd_small.png');
 }
 
 #college-logo{
@@ -44,7 +44,32 @@ html, body, #container{
 	height: 80px;
 	width: 80px;
 	right: 30%;
-	background: url(images/clg_logo_hd_small.png);
+	background: url('images/clg_logo_hd_small.png');
+}
+
+#login-button {
+	top: 30px;
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	right: 20px;
+	background: url('images/signin.png');
+	opacity: 0.7;
+}
+
+#login-button:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#login-dialog {
+	display: none;
+	width: 300px;
+	height: 300px;
+	top: 70px;
+	right: 20px;
+	position: fixed;
+	border: 1px red solid;
 }
 
 #wrapper {

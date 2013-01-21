@@ -109,11 +109,15 @@
 
 #header
 {
-	font: 48px 'UnicaOne-Regular';
 	color: white;
 	text-align: center;
 	width: 100%;
 	background: -webkit-linear-gradient(black, #444444);
+}
+
+#banner-text
+{
+	font: 48px 'UnicaOne-Regular';
 }
 
 #club-logo{
