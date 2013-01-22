@@ -9,8 +9,14 @@ $(document).ready(function() {
   		var dialogdiv = $('#login-dialog');
   		if (dialogdiv.css('display') == 'none') {
   			dialogdiv.css('display', 'block');
+  			setTimeout(function() {
+  				dialogdiv.css('opacity', 1);
+  			}, 20);
   		} else {
-  			dialogdiv.css('display', 'none');
+  			dialogdiv.css('opacity', 0);
+  			setTimeout(function() {
+  				dialogdiv.css('display', 'none');
+  			}, 300);
   		}
   	});
   }

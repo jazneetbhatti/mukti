@@ -73,6 +73,11 @@ html, body, #container{
 	border-radius: 10px;
 	z-index: 10;
 	box-shadow: 0px 0px 10px #222222;
+	opacity: 0;
+	transition: opacity 300ms;
+	-webkit-transition: opacity 300ms;
+	-moz-transition: opacity 300ms;
+	-o-transition: opacity 300ms;
 }
 
 #wrapper {
