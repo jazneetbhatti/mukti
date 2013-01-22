@@ -19,7 +19,7 @@
 
   "workshops": {
     "text": "Workshops",
-    "childNodes": [ "python", "webdev", "gsocbarcamp", "mediawiki" ],
+    "childNodes": [ "python", "web-security", "mediawiki" ],
     "parent": "mukti"
   },
 
@@ -95,8 +95,8 @@
     "parent": "workshops"
   },
 
-  "gsocbarcamp": {
-    "text": "GSOC Barcamp",
+  "web-security": {
+    "text": "Web Security",
     "childNodes": {},
     "parent": "workshops"
   },

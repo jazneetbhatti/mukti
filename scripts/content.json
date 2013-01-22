@@ -37,7 +37,7 @@
 
   "schedule": {
     "heading": "Schedule",
-    "content": "<p>It's hard for <a style=\"text-decoration:none;color:inherit\" href=\"http://en.wikipedia.org/wiki/Tux\">Tux</a> to type without fingers. So please come back after some time, while we ask him to hurry up ;)</p>"
+    "content": "<p>To be updated shortly</p>"
   },
 
   "about-mukti": {
@@ -57,12 +57,12 @@
 
   "technical-events": {
     "heading": "Technical",
-    "content": "<p>It's hard for <a style=\"text-decoration:none;color:inherit\" href=\"http://en.wikipedia.org/wiki/Tux\">Tux</a> to type without fingers. So please come back after some time, while we ask him to hurry up ;)</p>"
+    "content": "<br /><p>From cracking the logic to engaging coding problems to server configuration to hacking software, these tech events will give you a flavour of what it's like to be a software developer.</p>"
   },
 
   "non-technical-events": {
     "heading": "Fun",
-    "content": "<p>It's hard for <a style=\"text-decoration:none;color:inherit\" href=\"http://en.wikipedia.org/wiki/Tux\">Tux</a> to type without fingers. So please come back after some time, while we ask him to hurry up ;)</p>"
+    "content": "<br /><p>You don't need to be a great programmer to have fun. These events prove why !!!</p><p>And who knows, you might walk away as the champion, all at the cost of having fun. Now that doesn't seem like a bad deal after all, does it !</p>"
   },
 
   "online-events": {
@@ -75,13 +75,8 @@
     "content": "<p>It's hard for <a style=\"text-decoration:none;color:inherit\" href=\"http://en.wikipedia.org/wiki/Tux\">Tux</a> to type without fingers. So please come back after some time, while we ask him to hurry up ;)</p>"
   },
 
-  "webdev": {
-    "heading": "Web Development",
-    "content": "<p>It's hard for <a style=\"text-decoration:none;color:inherit\" href=\"http://en.wikipedia.org/wiki/Tux\">Tux</a> to type without fingers. So please come back after some time, while we ask him to hurry up ;)</p>"
-  },
-
-  "gsocbarcamp": {
-    "heading": "GSOC Barcamp",
+  "web-security": {
+    "heading": "Web Security",
     "content": "<p>It's hard for <a style=\"text-decoration:none;color:inherit\" href=\"http://en.wikipedia.org/wiki/Tux\">Tux</a> to type without fingers. So please come back after some time, while we ask him to hurry up ;)</p>"
   },
 
@@ -137,7 +132,7 @@
 
   "lipi": {
     "heading": "Lipi",
-    "content": "<br /><p>Do you want to contribute to Open Source software but don’t know or don't want to code?</p><br /><p>Well, how about translating software to your own language, like Hindi or Bangla or Telegu ? Moreover, how about getting rewarded for the effort. It can't get any easier than this.</p><br /><p>Contact:</p><p>Jeet &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9475201787</p><p>Siddhant &#160;9681939126</p>"
+    "content": "<br /><p>The flagship translation event of MUKTI’13, Lipi is back!</p><br /><p>You'll be given strings from the documentation of a free and open source software. All you have to do is translate the given string into Hindi or Bengali. Your translations will then be judged by a reputed FOSS language translator in both the languages and the winners will adjudged accordingly.</p><br /><p>Your contribution goes into the development of the software without you even having to write a single line of code. So come, and be a part of this exciting contribution fiesta of the FOSS community !</p><br /><p>Contact:</p><p>Jeet &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9475201787</p><p>Siddhant &#160;9681939126</p>"
   },
 
   "imagimp": {
