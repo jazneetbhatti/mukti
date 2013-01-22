@@ -9,6 +9,7 @@ $(document).ready(function() {
   		var dialogdiv = $('#login-dialog');
   		if (dialogdiv.css('display') == 'none') {
   			dialogdiv.css('display', 'block');
+  			$('#loginwrapper').css('display', 'block');
   			setTimeout(function() {
   				dialogdiv.css('opacity', 1);
   			}, 20);
@@ -16,6 +17,17 @@ $(document).ready(function() {
   			dialogdiv.css('opacity', 0);
   			setTimeout(function() {
   				dialogdiv.css('display', 'none');
+  				$('#loginwrapper').css('display', 'none');
+  			}, 300);
+  		}
+  	});
+  	$('#loginwrapper').click( function() {
+  		var dialogdiv = $('#login-dialog');
+  		if (dialogdiv.css('display') == 'block') {
+  			dialogdiv.css('opacity', 0);
+  			setTimeout(function() {
+  				dialogdiv.css('display', 'none');
+  				$('#loginwrapper').css('display', 'none');
   			}, 300);
   		}
   	});

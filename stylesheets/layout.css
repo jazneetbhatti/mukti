@@ -62,6 +62,10 @@ html, body, #container{
 	cursor: pointer;
 }
 
+#loginwrapper {
+	z-index: 9;
+}
+
 #login-dialog {
 	display: none;
 	width: 300px;

@@ -128,6 +128,17 @@
 	opacity: 0.7;
 }
 
+#loginwrapper {
+	opacity: 0;
+	display: none;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: white;
+}
+
 #login-dialog {
 	background: white;
 	border-radius: 10px;
