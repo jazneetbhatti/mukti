@@ -15,12 +15,30 @@ $(document).ready(function() {
   			}, 20);
   		}
   	});
+  	$('#register-button').click( function() {
+  		var dialogdiv = $('#register-dialog');
+  		if (dialogdiv.css('display') == 'none') {
+  			dialogdiv.show();
+  			$('#loginwrapper').show();
+  			setTimeout(function() {
+  				dialogdiv.css('top', '70px');
+  			}, 20);
+  		}
+  	});
   	$('#loginwrapper').click( function() {
   		var dialogdiv = $('#login-dialog');
   		if (dialogdiv.css('display') == 'block') {
   			dialogdiv.css('top', '-300px');
   			setTimeout(function() {
   				dialogdiv.hide();
+  				$('#loginwrapper').hide();
+  			}, 300);
+  		}
+  		var dialogdiv1 = $('#register-dialog');
+  		if (dialogdiv1.css('display') == 'block') {
+  			dialogdiv1.css('top', '-600px');
+  			setTimeout(function() {
+  				dialogdiv1.hide();
   				$('#loginwrapper').hide();
   			}, 300);
   		}

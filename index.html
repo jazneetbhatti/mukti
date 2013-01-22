@@ -23,6 +23,7 @@
 				<div id="college-logo"></div>
 				<div id="banner-text">Mukti '13</div>
 				<div id="login-button">&nbsp;</div>
+				<div id="register-button">&nbsp;</div>
 				<div id="loginwrapper"></div>
 				<div id="login-dialog">
 				    <div style="padding-bottom: 20px;">Sign in</div>
@@ -32,6 +33,18 @@
 				        <div><input name="submit" type="submit" value="Log In"/></div>
 				    </form>
 				</div>
+				<div id="register-dialog">
+                    <div style="padding-bottom: 20px;">Register</div>
+                    <form method="POST" action="/dologin">
+                        <div><input name="name" type="text" placeholder="Name"/></div>
+                        <div><input name="email" type="text" placeholder="Email"/></div>
+                        <div><input name="college" type="text" placeholder="College"/></div>
+                        <div><input name="phone" type="text" placeholder="Phone"/></div>
+                        <div><input name="password" type="password" placeholder="Password"/></div>
+                        <div><input name="confirmpassword" type="password" placeholder="Confirm Password"/></div>
+                        <div><input name="register" type="submit" value="Register"/></div>
+                    </form>
+                </div>
 			</div>
 		</div>
 
