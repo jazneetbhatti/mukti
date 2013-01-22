@@ -41,7 +41,7 @@
 
 #wrapper {
 	/*background: url('images/grid.png');*/
-	background: -webkit-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
+	background: -webkit-radial-gradient(center, circle farthest-side, #DDFFDD, #A0F573);
     background: -moz-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
     background: -o-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
 	background-color: #47F573;

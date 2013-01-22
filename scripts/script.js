@@ -13,12 +13,6 @@ $(document).ready(function() {
   			setTimeout(function() {
   				dialogdiv.css('top', '70px');
   			}, 20);
-  		} else {
-  			dialogdiv.css('top', '-300px');
-  			setTimeout(function() {
-  				dialogdiv.show();
-  				$('#loginwrapper').hide();
-  			}, 300);
   		}
   	});
   	$('#loginwrapper').click( function() {
