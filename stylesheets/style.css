@@ -139,7 +139,7 @@
 	-webkit-transition: opacity 300ms;
 	-moz-transition: opacity 300ms;
 	-o-transition: opacity 300ms;
-	font: 12pt 'Monda-Regular';
+	font: 14pt 'Monda-Regular';
 }
 
 #login-dialog input[type="text"],
@@ -148,7 +148,7 @@
   position: relative;
   width: 80%;
   height: auto;
-  font-size: 16px;
+  font: 12pt 'Monda-Regular';
 
   padding: 4px 6px 4px 6px;
   margin-bottom: 10px;
@@ -186,10 +186,10 @@
   display: inline-block;
   *display: inline;
   width: 85%;
-  padding: 4px 12px;
+  padding: 8px 12px;
   margin-bottom: 20px;
   *margin-left: .3em;
-  font-size: 14px;
+  font: 12pt 'Monda-Regular';
   line-height: 20px;
   color: #333333;
   text-align: center;
