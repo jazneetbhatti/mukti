@@ -44,8 +44,57 @@ $(document).ready(function() {
   		}
   	});
   }
+
+  function setupRegistrationValidate() {
+
+	$('#name').keyup( function() {
+    	$(this).removeClass('validationerror'); 
+    });
+    $('#email').keyup( function() {
+    	$(this).removeClass('validationerror'); 
+    });
+    $('#password').keyup( function() {
+    	$(this).removeClass('validationerror'); 
+    });
+    $('#college').keyup( function() {
+    	$(this).removeClass('validationerror'); 
+    });
+    $('#password').keyup( function() {
+    	$(this).removeClass('validationerror'); 
+    });
+    $('#confirmpassword').keyup( function() {
+    	$(this).removeClass('validationerror'); 
+    });
+
+  	$('#registerForm').submit( function () {
+  		var toReturn = true;
+  		if ($('#password').val() != $('#confirmpassword').val()) {
+  			toReturn = false;
+  			$('#confirmpassword').addClass('validationerror');
+  		}
+  		var email = $('#email').val();
+  		if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) == false) {
+  			toReturn = false;
+  			$('#email').addClass('validationerror');
+  		}
+  		if ($('#name').val() == '') {
+  			toReturn = false;
+  			$('#name').addClass('validationerror');
+  		}
+  		if ($('#college').val() == '') {
+  			toReturn = false;
+  			$('#college').addClass('validationerror');
+  		}
+  		if ($('#password').val() == '') {
+  			toReturn = false;
+  			$('#password').addClass('validationerror');
+  		}
+  		return toReturn;
+  	});
+  }
   
   setupLoginDialog();
+  setupRegistrationValidate();
 
 /*
  * ------------------------------ HEADER ENDS ----------------------------------------------------

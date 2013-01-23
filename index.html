@@ -27,7 +27,7 @@
 				<div id="loginwrapper"></div>
 				<div id="login-dialog">
 				    <div style="padding-bottom: 20px;">Sign in</div>
-				    <form method="POST" action="/dologin">
+				    <form method="post" action="dologin.php">
 				        <div><input name="email" type="text" placeholder="Email"/></div>
 				        <div><input name="password" type="password" placeholder="Password"/></div>
 				        <div><input name="submit" type="submit" value="Log In"/></div>
@@ -36,13 +36,13 @@
 				</div>
 				<div id="register-dialog">
                     <div style="padding-bottom: 20px;">Register</div>
-                    <form method="POST" action="/dologin">
-                        <div><input name="name" type="text" placeholder="Name"/></div>
-                        <div><input name="email" type="text" placeholder="Email"/></div>
-                        <div><input name="college" type="text" placeholder="College"/></div>
-                        <div><input name="phone" type="text" placeholder="Phone"/></div>
-                        <div><input name="password" type="password" placeholder="Password"/></div>
-                        <div><input name="confirmpassword" type="password" placeholder="Confirm Password"/></div>
+                    <form method="post" action="doregister.php" id="registerForm">
+                        <div><input name="name" id="name" type="text" placeholder="Name"/></div>
+                        <div><input name="email" id="email" type="text" placeholder="Email"/></div>
+                        <div><input name="college" id="college" type="text" placeholder="College"/></div>
+                        <div><input name="phone" id="phone" type="text" placeholder="Phone"/></div>
+                        <div><input name="password" id="password" type="password" placeholder="Password"/></div>
+                        <div><input name="confirmpassword" id="confirmpassword" type="password" placeholder="Confirm Password"/></div>
                         <div><input name="register" type="submit" value="Register"/></div>
                     </form>
                 </div>
