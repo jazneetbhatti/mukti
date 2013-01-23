@@ -25,7 +25,7 @@
 
   "sponsors": {
     "text": "Sponsors",
-    "childNodes": [ "current-past-sponsors", "sponsor-us" ],
+    "childNodes": {},
     "parent": "mukti"
   },
 

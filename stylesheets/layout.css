@@ -269,3 +269,19 @@ html, body, #container{
 #mailing-list div{
 	float: left;
 }
+
+.logo-wrapper {
+	width: 300px;
+}
+
+#ungineering {
+	height: 169px;
+	width: 300px;
+	background: url('images/logo_ungineering_sponsor.png');
+}
+
+#knowafest {
+	height: 100px;
+	width: 300px;
+	background: url('images/knowafest.png');
+}
