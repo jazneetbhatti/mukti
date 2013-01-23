@@ -299,3 +299,13 @@ html, body, #container{
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
+
+.map {
+	padding-top: 10px;
+	float: left;
+}
+
+#college-address {
+	text-align: right;
+	padding-left: 20px;
+}

@@ -102,7 +102,7 @@
 
   "reach-us": {
     "heading": "Reach Us",
-    "content": "<p>It's hard for <a style=\"text-decoration:none;color:inherit\" href=\"http://en.wikipedia.org/wiki/Tux\">Tux</a> to type without fingers. So please come back after some time, while we ask him to hurry up ;)</p>"
+    "content": "<div class=\"map\"><iframe width=\"300\" height=\"300\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=nit+durgapur&amp;sll=24.372814,87.850498&amp;sspn=6.141886,9.162598&amp;ie=UTF8&amp;hq=nit+durgapur&amp;t=m&amp;ll=23.547543,87.291527&amp;spn=0.023605,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed\"></iframe><br /><small><a href=\"https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=nit+durgapur&amp;sll=24.372814,87.850498&amp;sspn=6.141886,9.162598&amp;ie=UTF8&amp;hq=nit+durgapur&amp;t=m&amp;ll=23.547543,87.291527&amp;spn=0.023605,0.025749&amp;z=14&amp;iwloc=A\" style=\"text-decoration:none;color:inherit;text-align:left\" target=\"_blank\">View Larger Map</a></small></div><div class=\"map\" id=\"college-address\"><p>We're at:</p><p>National Institute of Technology Durgapur</p><p>Mahatma Gandhi Avenue</p><p>Durgapur<p>West Bengal - 713209</p></div>"
   },
 
   "brainmesh": {
