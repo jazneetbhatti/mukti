@@ -285,3 +285,17 @@ html, body, #container{
 	width: 300px;
 	background: url('images/knowafest.png');
 }
+
+.contact-left-column {
+	text-align: left;
+	padding-right: 85px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.contact-right-column {
+	text-align: right;
+	padding-left: 85px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}

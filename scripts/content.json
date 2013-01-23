@@ -97,7 +97,7 @@
 
   "contact-us": {
     "heading": "Contact Us",
-    "content": "<br /><p>Tirtha Chatterjee</p><p>9674681233</p><p>tirtha@mkti.in</p><br /><p>Jasneet Singh Bhatti<p>9564896594</p><p>jasneet@mkti.in</p>"
+    "content": "<table><tr><td class=\"contact-left-column\"><div><p>Tirtha Chatterjee</p><p>President, GLUG</p><p>9674681233</p><p>tirtha@mkti.in</p></div></td><td class=\"contact-right-column\"><div><p>Jasneet Singh Bhatti</p><p>Convenor, Mukti'13</p><p>9564896594</p><p>jasneet@mkti.in</p></div></td></tr><tr><td class=\"contact-left-column\"><div><p>Rajarshi Sahani</p><p>Vice President, GLUG</p><p>9775390755</p><p>rajarshi@mkti.in</p></div></td><td class=\"contact-right-column\"><div><p>Saurabh Araiyer</p><p>General Secretary, GLUG</p><p>9432969266</p><p>saurabh@mkti.in</p></div></td></table>"
   },
 
   "reach-us": {
