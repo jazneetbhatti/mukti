@@ -53,7 +53,7 @@ html, body, #container{
 	height: 32px;
 	width: 32px;
 	right: 20px;
-	background: url('images/signin.png');
+	background: url('images/signin.png') no-repeat;
 	opacity: 0.7;
 }
 
