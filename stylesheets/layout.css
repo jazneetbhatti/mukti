@@ -68,7 +68,7 @@ html, body, #container{
 	height: 32px;
 	width: 32px;
 	right: 60px;
-	background: url('images/user.png');
+	background: url('images/user.png') no-repeat;
 	opacity: 0.7;
 }
 
