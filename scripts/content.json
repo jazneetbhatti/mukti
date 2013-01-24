@@ -67,7 +67,7 @@
 
   "online-events": {
     "heading": "Online Events",
-    "content": "<p>It's hard for <a style=\"text-decoration:none;color:inherit\" href=\"http://en.wikipedia.org/wiki/Tux\">Tux</a> to type without fingers. So please come back after some time, while we ask him to hurry up ;)</p>"
+    "content": ""
   },
 
   "python": {
@@ -117,7 +117,7 @@
 
   "htc": {
     "heading": "Hack The Code",
-    "content": "<p>It's hard for <a style=\"text-decoration:none;color:inherit\" href=\"http://en.wikipedia.org/wiki/Tux\">Tux</a> to type without fingers. So please come back after some time, while we ask him to hurry up ;)</p>"
+    "content": "<br /><p>\"I get hired by companies to hack into their systems and break into their physical facilities to find security holes. Our success rate is 100%; we've always found a hole !\" - Kevin Mitnick</p><br /><p>Is it your forte to exalt every piece of code to perfection?</p><p>Then here is your chance to cultivate your niche.</p><br /><p>Mukti ‘13 rolls out the ultimate bug-buster!</p><br /><p>Challenge your programming acumen to debug the given code or rewrite it to meet the specifications.</p><br /><p>Rules and regulations :</p><p>1. The contestants will be provided with simple codes, the marking being in sync with the difficulty level.</p><p>2. Each code has some specifications, whether it has to be made bugfree or rewritten so as to implement any new functionality or to make any changes so that its current functionality remains unchanged.</p><p>3. The new codes will be judged on the basis of them abiding by the specified requirements, simplicity and readability. Plus, any changes made to the functionality of the code will lead to disqualification of the entire code, and will not be counted.</p><p>4. The marks obtained by the participant will be the total of the marks of the codes he/she has debugged or solved.</p><p>5. There is no limit to the number of submissions, but they must be completed within the time allotted. Any submission thereafter will not be entertained.</p><br /><p>Contact:</p><p>Subham &#160;&#160;&#160;&#160;&#160;&#160;&#160;8293576114</p><p>Tannishtha &#160;&#160;7679510920</p><p>Amit &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9046681873</p>"
   },
 
   "konfigure": {
