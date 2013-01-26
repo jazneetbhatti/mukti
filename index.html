@@ -52,7 +52,7 @@
 		<div id="wrapper">
 			<div id="content" class="wrapper-column">
 				<!-- Display the content corresponding to the selected menu option -->
-				<h1></h1>
+				<h1>&nbsp;</h1>
 
 				<div id="content-body-wrapper">
 					<div id="content-body">&nbsp;</div>
@@ -65,12 +65,29 @@
 				</ul>
 			</div>
 
-		<!-- The notification widget to be implemented later -->
-		<!--
+		<!-- The notification widget -->
+
 			<div id="right-notification-widget" class="wrapper-column">
-				<p>This is a placeholder text for the notification widget</p>
+				<div id="notification-widget-wrapper">
+					<div id="notification-wrapper">
+						<div id="notification-banner"><p>Notifications</p></div>
+
+						<div id="notification-content-wrapper">
+							<div id="notification-content">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="happening-now-widget-wrapper">
+					<div id="happening-now-wrapper">
+						<div id="happening-now-banner"><p>Happening Now</p></div>						
+
+						<div id="happening-now-content-wrapper">
+							<div id="happening-now-content"></div>
+						</div>
+					</div>
+				</div>
 			</div>
-		-->
 		</div>
 
 		<div id="footer">
@@ -142,6 +159,12 @@
     (function($){
         $(window).load(function(){
             $("#content-body-wrapper").mCustomScrollbar({
+            	scrollButtons: {
+            		enable:true
+            	}
+            });
+
+	    $("#notification-content-wrapper").mCustomScrollbar({
             	scrollButtons: {
             		enable:true
             	}

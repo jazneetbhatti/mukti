@@ -8,8 +8,7 @@ html, body, #container{
 }
 
 #container {
-	min-width: 950px;		/* 2 x nav-menu width + right-notification-widget width, to prevent
-												 the layout from being broken on browser resizing */
+	min-width: 1200px;
 }
 
 #header {
@@ -107,8 +106,8 @@ html, body, #container{
 }
 
 #wrapper {
-	padding-left: 400px;
-	padding-right: 50px;    /* Should be reset back to 250px when the notification widget is implemented */
+	padding-left: 375px;
+	padding-right: 250px;    /* Should be reset back to 250px when the notification widget is implemented */
 
 	height: 444px;
 }
@@ -121,7 +120,7 @@ html, body, #container{
 #content {
 	width: 100%;
 	height: 100%;
-	padding-right: 50px;
+	padding-right: 20px;
 }
 
 #content-body-wrapper {
@@ -130,15 +129,46 @@ html, body, #container{
 }
 
 #nav-menu {
-	width: 400px;
+	width: 375px;
 	margin-left: -105%;
-	right: 400px;
+	right: 375px;
 	height: 400px;
 }
 
 #right-notification-widget {
-	width: 250px;
+	width: 225px;
 	margin-right: -250px;
+	height: 444px;
+}
+
+#notification-widget-wrapper {
+	height: 325px;
+	margin-top: 10px;
+}
+
+#notification-wrapper {
+	padding-top: 10px;
+}
+
+#notification-content-wrapper {
+	padding-top: 15px;
+	height: 240px;
+	overflow-y: auto;
+}
+
+#happening-now-widget-wrapper {
+	margin: 0 25px 0 25px;
+	height: 100px;
+}
+
+#happening-now-wrapper {
+	padding-top: 5px;
+}
+
+#happening-now-content-wrapper {
+	padding-top: 10px;
+	height: 55px;
+	overflow-y: auto;
 }
 
 #footer {
@@ -288,7 +318,7 @@ html, body, #container{
 
 .contact-left-column {
 	text-align: left;
-	padding-right: 85px;
+	padding-right: 45px;
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
@@ -302,10 +332,7 @@ html, body, #container{
 
 .map {
 	padding-top: 10px;
+	padding-bottom: 10px;
 	float: left;
 }
 
-#college-address {
-	text-align: right;
-	padding-left: 20px;
-}

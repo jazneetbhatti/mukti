@@ -41,10 +41,18 @@
 
 #wrapper {
 	/*background: url('images/grid.png');*/
-	background: -webkit-radial-gradient(center, circle farthest-side, #DDFFDD, #A0F573);
-    background: -moz-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
-    background: -o-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
+/*	background: -webkit-radial-gradient(center, circle farthest-side, #DDFFDD, #A0F573);
+  background: -moz-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
+  background: -o-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
 	background-color: #47F573;
+	*/
+	     background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left, rgba(255,153,51,1) 0%, rgba(255,255,255,1) 41%, rgba(255,255,255,1) 58%, rgba(83,178,35,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,153,51,1)), color-stop(41%,rgba(255,255,255,1)), color-stop(58%,rgba(255,255,255,1)), color-stop(100%,rgba(83,178,35,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(255,153,51,1) 0%,rgba(255,255,255,1) 41%,rgba(255,255,255,1) 58%,rgba(83,178,35,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(255,153,51,1) 0%,rgba(255,255,255,1) 41%,rgba(255,255,255,1) 58%,rgba(83,178,35,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(255,153,51,1) 0%,rgba(255,255,255,1) 41%,rgba(255,255,255,1) 58%,rgba(83,178,35,1) 100%); /* IE10+ */
+background: linear-gradient(to right, rgba(255,153,51,1) 0%,rgba(255,255,255,1) 41%,rgba(255,255,255,1) 58%,rgba(83,178,35,1) 100%); /* W3C */
 }
 
 .wrapper-column {
@@ -82,8 +90,83 @@
 	color: white;
 }
 
+#notification-widget-wrapper {
+	color: white;
+	background-color: black;
+	border-radius: 15px;
+	background: -webkit-linear-gradient(#000000, #444444, #000000);
+	background: -moz-linear-gradient(#000000, #444444, #000000);
+	background: -o-linear-gradient(#000000, #444444, #000000);
+	box-shadow: 4px 4px 5px #888888;
+}
+
+#notification-banner {
+	margin: 0px 25px 0px 25px;
+	color: black;
+	background: white;
+	border-radius: 25px;
+	padding-bottom: 5px;
+	text-align: center;
+	font: 16pt 'PaytoneOne';
+}
+
+#notification-content {
+	margin: 10px 17px 10px 17px;
+}
+
+.notification-text-wrapper{
+	padding-bottom: 10px;
+}
+
+.notification-text {
+	padding-left: 5px;
+	padding-right: 5px;
+	color: black;
+	background: white;
+	border-radius: 5px;
+	font: 8pt 'Monda-Regular';
+}
+
+.timestamp {
+	font-size: 7.5pt;
+	font-style: italic;
+}
+
+#happening-now-widget-wrapper {
+	color: black;
+	background-color: white;	
+	border-radius: 0 0 15px 15px;
+	box-shadow: 4px 4px 5px #888888;
+}
+
+#happening-now-banner {
+	margin: 0px 25px 0px 25px;
+	color: white;
+	background: black;
+	border-radius: 10px;
+	padding-bottom: 2.5px;
+	text-align: center;
+	font: 10pt 'PaytoneOne';
+}
+
+#happening-now-content {
+	margin: 0px 5px 0px 5px;
+}
+
+.happening-now-content-text {
+	text-align: center;
+	font: 12pt 'Monda-Regular';
+}
+
+.happening-now-content-text a {
+	text-decoration: none;
+	color: inherit;
+}
+
 #footer {
 	background: -webkit-linear-gradient(#444444, #000000);
+	background: -moz-linear-gradient(#444444, #000000);
+	background: -o-linear-gradient(#444444, #000000);
 	font: 11.5pt 'Monda-Regular';
 }
 
@@ -100,6 +183,8 @@
 #content-body
 {
 	color: #004020;
+	margin-left: 5px;
+	margin-right: 20px;
 	font: 14pt 'Monda-Regular';
 	transition: opacity 500ms;
 	-webkit-transition: opacity 500ms;
@@ -113,6 +198,8 @@
 	text-align: center;
 	width: 100%;
 	background: -webkit-linear-gradient(black, #444444);
+	background: -moz-linear-gradient(black, #444444);
+	background: -o-linear-gradient(black, #444444);
 }
 
 #banner-text

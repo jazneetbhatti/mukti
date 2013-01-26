@@ -73,7 +73,7 @@
 
   "non-technical-events": {
     "text": "Fun",
-    "childNodes": [ "lipi", "footballpl", "imagimp" ],
+    "childNodes": [ "lipi", "footballpl" ],
     "parent": "events"
   },
 

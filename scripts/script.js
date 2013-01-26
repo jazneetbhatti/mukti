@@ -107,6 +107,7 @@ $(document).ready(function() {
 
 	var fetchedContentData, currentContentObject; // currentContentObject corresponds to the content for the centre node
 	var fetchedMenuData, currentMenuObject; // currentMenuObject corresponds to the centre node in the menu
+	var fetchedNotificationData;
 
 	/* Invokes the circular menu plugin */
   function applyCircleMenu(){
@@ -217,7 +218,7 @@ $(document).ready(function() {
 			});
 		}
   }
-	
+
 	$.getJSON('scripts/content.json', function(data) {
 		fetchedContentData = data;
 	});
@@ -229,6 +230,87 @@ $(document).ready(function() {
 		applyCircleMenu();
 		updateContent('mukti');	
 	});
+
+	var index;
+	function cycleHappeningNow(){
+		$('#happening-now-content').fadeOut('slow', function(){
+			$(this).html('<div class="happening-now-content-text">' + fetchedNotificationData.live[index].text + '</div>').fadeIn('slow');
+			console.log('index'+'='+index+' length='+ fetchedNotificationData.live.length);
+			index = ( index + 1 ) % fetchedNotificationData.live.length;
+		});
+	}
+
+	function flashtext(){
+		var element = $('#happening-now-banner');
+		console.log(element.css('background-color'));
+    if( element.css('background-color') != 'rgb(255, 0, 0)'  )
+			element.animate({ 'background-color': 'red' }, 300 );		
+		else
+			element.animate({ 'background-color': 'black' }, 300 );		
+	}
+
+	var intervalId, flashingId;
+	function updateHappeningNow(){
+			var element = $('#happening-now-content');
+ 			if( $.isEmptyObject(fetchedNotificationData.live))
+			{	
+				clearInterval(intervalId);
+				clearInterval(flashingId);
+				$('#happening-now-content').fadeOut('slow', function(){
+					$(this).html('<div class="happening-now-content-text">No live events right now</div>').fadeIn('slow');
+				});
+				$('#happening-now-banner').animate({ 'background-color': 'black' }, 300 );		
+			}
+			else
+			{
+				index = 0;
+				clearInterval(intervalId);
+				clearInterval(flashingId);
+				intervalId = setInterval( cycleHappeningNow, 3000 );
+				flashingId = setInterval( flashtext, 900 );
+			}
+		
+	}
+
+	var since_id = 0;									// The notifications will start after this id no
+	function showNotifications(index){
+		var data = fetchedNotificationData;
+		if( index >= 0 ){
+			if( since_id < data.results[index].id_no ){
+				$('<div class="notification-text-wrapper"><div class="notification-text"><p>' + data.results[index].text + '</p><p class=\"timestamp\">Posted @ ' + data.results[index].time +', ' + data.results[index].date + '</p></div><div>').hide().prependTo('#notification-content').slideDown('slow').promise().done( function() {
+					$("#notification-content-wrapper").mCustomScrollbar('update');
+					since_id = data.results[index].id_no;
+					index = index - 1;
+				  console.log(index);
+				  console.log('since'+since_id);
+				  showNotifications(index);
+				});
+			}
+			else{
+					index = index - 1;
+				  console.log(index+'else');
+				  console.log('since'+since_id+'else');
+				  showNotifications(index);
+			}
+		}
+	}
+
+	function fetchNotifications(){
+		console.log('here');
+		$.ajaxSetup({ cache: false});		
+		$.getJSON('scripts/notifications.json', function(data) {
+			fetchedNotificationData = data;
+			console.log(fetchedNotificationData);
+			console.log('here123');
+			showNotifications(fetchedNotificationData.results.length - 1);
+			updateHappeningNow();
+
+			$.ajaxSetup({ cache: true});
+		});
+			setTimeout( fetchNotifications, 30000 );
+	}
+
+	fetchNotifications();
 
 /* ------------------------------ WRAPPER END --------------------------------------------------- */
 
@@ -258,3 +340,4 @@ $(document).ready(function() {
 		});
 	});
 });
+

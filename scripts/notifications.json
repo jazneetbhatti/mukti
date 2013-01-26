@@ -1,0 +1,79 @@
+{
+    "results": [
+        {
+            "text": "Check out the standings for yesterday's play at <a href=\"http://freepl.mkti.in\" target=\"_blank\">freepl.mkti.in</a> and lock your teams for tomorrow's match before 11 pm tonight.",
+            "id_no": 10,
+            "time": "2:20 pm IST",
+            "date": "26'Jan"
+        },
+
+        {
+            "text": "Send in your entries for Brainmesh to <a href=\"mailto:brainmesh@mkti.in\">brainmesh@mkti.in</a>. Sponsored by <a href=\"http://www.ungineering.com\" target=\"_blank\">Ungineering</a>.",
+            "id_no": 9,
+            "time": "10:05 am IST",
+            "date": "26'Jan"
+        },
+
+        {
+            "text": "The Freemex market is closed for the day. Log back in tomorrow at 9 pm as the market reopens to newer surprises !",
+            "id_no": 8,
+            "time": "00:07 am IST",
+            "date": "26'Jan"
+        },
+
+        {
+            "text": "Online Treasure Hunt starts tomorrow at 8pm.",
+            "id_no": 7,
+            "time": "11:31 pm IST",
+            "date": "25'Jan"
+        },
+
+        {
+            "text": "The FreePL teams for tomorrow's match have been locked. Log in to <a href=\"http://freepl.mkti.in\" target=\"_blank\">freepl.mkti.in</a> tomorrow to see how you fared.",
+            "id_no": 6,
+            "time": "11:16 pm IST",
+            "date": "25'Jan"
+        },
+
+        {
+            "text": "Lock your FreePL teams before 11 pm tonight for tomorrow's match between Australia and Sri Lanka. Head over to <a href=\"http://freepl.mkti.in\" target=\"_blank\">freepl.mkti.in</a>",
+            "id_no": 5,
+            "time": "10:15 pm IST",
+            "date": "25'Jan"
+        },
+
+        {
+            "text": "Freemex has started. Go to <a href=\"http://freemex.mkti.in\" target=\"_blank\">freemex.mkti.in</a> to participate.",
+            "id_no": 4,
+            "time": "10:15 pm IST",
+            "date": "25'Jan"
+        },
+
+        {
+            "text": "Entries for web-based app making contest Brainmesh are open till 30th Jan'13.",
+            "id_no": 3,
+            "time": "6:55 pm IST",
+            "date": "25'Jan"
+        },
+
+        {
+            "text": "<a href=\"http://freemex.mkti.in\" target=\"_blank\">Freemex</a> starts at 9 pm tonight",
+            "id_no": 2,
+            "time": "6:51 pm IST",
+            "date": "25'Jan"
+        },
+
+        {
+            "text": "Mukti '13 is here. February 2nd to 5th, 2013. Rediscover Freedom!",
+            "id_no": 1,
+            "time": "6:50 pm IST",
+            "date": "25'Jan"
+        }
+    ],
+
+		"live": [
+				{
+						"text": "<a href=\"http://freepl.mkti.in\" target=\"_blank\">FreePL</a>"
+				}
+		]
+}
