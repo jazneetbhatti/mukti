@@ -40,19 +40,11 @@
 }
 
 #wrapper {
-	/*background: url('images/grid.png');*/
-/*	background: -webkit-radial-gradient(center, circle farthest-side, #DDFFDD, #A0F573);
-  background: -moz-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
-  background: -o-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
+/*	background: url('images/grid.png');*/
+	background: -webkit-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
+    background: -moz-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
+    background: -o-radial-gradient(center, circle farthest-side, #A4E893, #47F573);
 	background-color: #47F573;
-	*/
-	     background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(left, rgba(255,153,51,1) 0%, rgba(255,255,255,1) 41%, rgba(255,255,255,1) 58%, rgba(83,178,35,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,153,51,1)), color-stop(41%,rgba(255,255,255,1)), color-stop(58%,rgba(255,255,255,1)), color-stop(100%,rgba(83,178,35,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left, rgba(255,153,51,1) 0%,rgba(255,255,255,1) 41%,rgba(255,255,255,1) 58%,rgba(83,178,35,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left, rgba(255,153,51,1) 0%,rgba(255,255,255,1) 41%,rgba(255,255,255,1) 58%,rgba(83,178,35,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left, rgba(255,153,51,1) 0%,rgba(255,255,255,1) 41%,rgba(255,255,255,1) 58%,rgba(83,178,35,1) 100%); /* IE10+ */
-background: linear-gradient(to right, rgba(255,153,51,1) 0%,rgba(255,255,255,1) 41%,rgba(255,255,255,1) 58%,rgba(83,178,35,1) 100%); /* W3C */
 }
 
 .wrapper-column {
@@ -226,6 +218,29 @@ background: linear-gradient(to right, rgba(255,153,51,1) 0%,rgba(255,255,255,1) 
 	background-color: white;
 }
 
+#logout-button {
+	font: 12pt 'Monda-Regular';
+}
+
+#logout-button a {
+	text-decoration: none;
+	color: white;
+}
+
+#welcome-bar {
+	color: white;
+	font: 12pt 'Monda-Regular';
+	line-height: 25px;
+}
+
+#login-button {
+	font: 12pt 'Monda-Regular';
+}
+
+#register-button {
+	font: 12pt 'Monda-Regular';
+}
+
 #login-dialog,
 #register-dialog {
 	background: white;
@@ -337,4 +352,10 @@ background: linear-gradient(to right, rgba(255,153,51,1) 0%,rgba(255,255,255,1) 
 
 .validationerror {
 	background-color: #FFDDD0 !important;
+}
+
+#register-login-text {
+	text-align: center;
+	color: #004020;
+	font: 14pt 'Monda-Regular';
 }

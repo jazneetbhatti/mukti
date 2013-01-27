@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +28,9 @@
 				<div id="college-logo"></div>
 				<div id="banner-text">Mukti '13</div>
 				
+				<?php
+					if (!isset($_SESSION['login_name'])) {
+				?>
 				<div id="login-button">Sign In</div>
 				<div id="register-button">Register</div>
 				<div id="loginwrapper"></div>
@@ -51,11 +58,17 @@
                         			<div><input name="register" type="submit" value="Register"/></div>
                     			</form>
                 		</div>
+                		<?php
+					} else { 
+				?>
 				<div id="logout-button"><a href="./include/logout.php">Sign Out</a></div>
 				<div id="welcome-bar">
 					<div>Hi, <?php echo $_SESSION['login_name']; ?></div>
 					<div>Reg No: <?php echo $_SESSION['user_id']; ?></div>
 				</div>
+				<?php
+					}
+				?>
 			</div>
 		</div>
 

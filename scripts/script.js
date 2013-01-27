@@ -85,6 +85,16 @@ $(document).ready(function() {
   			toReturn = false;
   			$('#college').addClass('validationerror');
   		}
+
+  		var phone = $('#phone').val();
+  		if (/^(\d)+$/.test(phone) == false) {
+  			toReturn = false;
+  			$('#phone').addClass('validationerror');
+  		}
+  		if ($('#city').val() == '') {
+  			toReturn = false;
+  			$('#city').addClass('validationerror');
+  		}
   		if ($('#password').val() == '') {
   			toReturn = false;
   			$('#password').addClass('validationerror');
@@ -272,7 +282,7 @@ $(document).ready(function() {
 		
 	}
 
-	var since_id = 0;									// The notifications will start after this id no
+	var since_id = 8;									// The notifications will start after this id no
 	function showNotifications(index){
 		var data = fetchedNotificationData;
 		if( index >= 0 ){

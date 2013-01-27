@@ -1,6 +1,62 @@
 {
     "results": [
         {
+            "text": "The Freemex market is open. Log in to <a href=\"http://freemex.mkti.in\" target=\"_blank\">freemex.mkti.in</a>.",
+            "id_no": 18,
+            "time": "9:00 pm IST",
+            "date": "27'Jan"
+        },
+
+        {
+            "text": "Don't forget to lock in your teams for tomorrow's Australia vs Sri Lanka match. Go to <a href=\"http://freepl.mkti.in\" target=\"_blank\">freepl.mkti.in</a>.",
+            "id_no": 17,
+            "time": "5:45 pm IST",
+            "date": "27'Jan"
+        },
+
+        {
+            "text": "The hunt has intensified. Hurry up and head over to <a href=\"http://treasurehunt.mkti.in\" target=\"_blank\">treasurehunt.mkti.in</a>.",
+            "id_no": 16,
+            "time": "5:41 pm IST",
+            "date": "27'Jan"
+        },
+
+        {
+            "text": "The Freemex market has closed for the day after some heavy trading. Hope to see you all back when the market opens again at 9 pm.",
+            "id_no": 15,
+            "time": "00:12 am IST",
+            "date": "27'Jan"
+        },
+
+        {
+            "text": "FreePL teams lock at 11 pm. Hurry up and log in to <a href=\"http://freepl.mkti.in\" target=\"_blank\">freepl.mkti.in</a>",
+            "id_no": 14,
+            "time": "10:56 pm IST",
+            "date": "26'Jan"
+        },
+
+        {
+            "text": "Online Tresure Hunt has started. Log in to <a href=\"http://treasurehunt.mkti.in\" target=\"_blank\">treasurehunt.mkti.in</a>",
+            "id_no": 13,
+            "time": "10.07 pm IST",
+            "date": "26'Jan"
+        },
+
+        {
+            "text": "Freemex starts at 9 pm. Log in to <a href=\"http://freemex.mkti.in\" target=\"_blank\">freemex.mkti.in</a>",
+            "id_no": 12,
+            "time": "8:50 pm IST",
+            "date": "26'Jan"
+        },
+
+        {
+            "text": "Due to requests from people to postpone the event till after dinner, the Online Treasure Hunt will now start at 9:30 pm.",
+            "id_no": 11,
+            "time": "7:55 pm IST",
+            "date": "26'Jan"
+        },
+
+        {
             "text": "Check out the standings for yesterday's play at <a href=\"http://freepl.mkti.in\" target=\"_blank\">freepl.mkti.in</a> and lock your teams for tomorrow's match before 11 pm tonight.",
             "id_no": 10,
             "time": "2:20 pm IST",
@@ -73,7 +129,15 @@
 
 		"live": [
 				{
+						"text": "<a href=\"http://freemex.mkti.in\" target=\"_blank\">Freemex</a>"
+				},
+
+				{
 						"text": "<a href=\"http://freepl.mkti.in\" target=\"_blank\">FreePL</a>"
+				},
+
+				{
+						"text": "<a href=\"http://treasurehunt.mkti.in\" target=\"_blank\">Online Treasure Hunt</a>"
 				}
 		]
 }

@@ -26,7 +26,7 @@
 
   "contact": {
     "heading": "Contact",
-    "content": "<p>It's hard for <a style=\"text-decoration:none;color:inherit\" href=\"http://en.wikipedia.org/wiki/Tux\">Tux</a> to type without fingers. So please come back after some time, while we ask him to hurry up ;)</p>"
+    "content": ""
   },
 
   "register": {
@@ -61,7 +61,7 @@
 
   "non-technical-events": {
     "heading": "Fun",
-    "content": "<br /><p>You don't need to be a great programmer to have fun. These events prove why !!!</p><p>And who knows, you might walk away as the champion, all at the cost of having fun. Now that doesn't seem like a bad deal after all, does it !</p>"
+    "content": "<br /><p>You don't need to be a great programmer to have fun. These events prove why !!!</p><p>And who knows, you might walk away as the champion and with a heavier pocket, all at the cost of having fun. Now that doesn't seem like a bad deal after all, does it !</p>"
   },
 
   "online-events": {
@@ -96,8 +96,7 @@
 
   "contact-us": {
     "heading": "Contact Us",
-    "content": "<table><tr><td class=\"contact-left-column\"><div><p>Tirtha Chatterjee</p><p>President, GLUG</p><p>9674681233</p><p>tirtha@mkti.in</p></div></td><td class=\"contact-right-column\"><div><p>Jasneet Singh Bhatti</p><p>Convenor, Mukti'13</p><p>9564896594</p><p>jasneet@mkti.in</p></div></td></tr><tr><td class=\"contact-left-column\"><div><p>Rajarshi Sahani</p><p>Vice President, GLUG</p><p>9775390755</p><p>rajarshi@mkti.in</p></div></td><td class=\"contact-right-column\"><div><p>Saurabh Araiyer</p><p>General Secretary, GLUG</p><p>9432969266</p><p>saurabh@mkti.in</p></div></td></table>"
-  },
+      "content": "<table><tr><td class=\"contact-left-column\"><div><p>Tirtha Chatterjee</p><p>President, GLUG</p><p>9674681233</p><p>tirtha@mkti.in</p></div></td><td class=\"contact-right-column\"><div><p>Jasneet Singh Bhatti</p><p>Convenor, Mukti'13</p><p>9564896594</p><p>jasneet@mkti.in</p></div></td></tr><tr><td class=\"contact-left-column\"><div><p>Rajarshi Sahani</p><p>Vice President, GLUG</p><p>9775390755</p><p>rajarshi@mkti.in</p></div></td><td class=\"contact-right-column\"><div><p>Saurabh Araiyer</p><p>General Secretary, GLUG</p><p>9002948106</p><p>saurabh@mkti.in</p></div></td></tr><tr><td class=\"contact-left-column\"><div><p>Gaurav Khetan</p><p>Resource Management</p><p> and Publicity Head, GLUG</p><p>9432969266</p><p>gaurav@mkti.in</p></div></td></tr></table>"},
 
   "reach-us": {
     "heading": "Reach Us",
@@ -164,3 +163,4 @@
     "content": "<br /><p>Are you a football fanatic ?? Do you eat, sleep and dream football ?? Bob Marley said “FOOTBALL IS FREEDOM”. Do you feel the same??</p><br /><p>Well, the wait is finally over. MUKTI’13 presents FootballPL, the ultimate platform to prove your expertise as a football team manager. Prove your mettle and exalt your team to victory.</p><br /><p>So, come, pick your squad, fight your way through all odds and emerge as the ultimate winner.</p><br /><p>Contact:</p><p>Anurag &#160;9932862135</p><p>Debjit &#160;&#160;&#160;7384876870</p>"
   }
 }
+
