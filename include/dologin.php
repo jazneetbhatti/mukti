@@ -44,12 +44,12 @@
 
 				// registered successfully
 				SendUserConfirmationEmail($myemailid, $myname, $confirmationcode);
-				$message = "<div id=\"register-login-text\"><p>Registered successfully. Please check your mail for the activation link.</p><p>In case you don't receive the mail, contact us at <a href=\"mailto:admin@mkti.in\" text-decoration:none>admin@mkti.in</a>.</p><br /><br /><p>This page will automatically redirect to the homepage in <span id=\"timer\">15 seconds<span></p></div>";
+				$message = "<div id=\"register-login-text\"><p>Registered successfully. Please check your mail for the activation link.</p><p>In case you don't receive the mail, contact us at <a href=\"mailto:admin@mkti.in\" text-decoration:none>admin@mkti.in</a>.</p><br /><br /><p>This page will automatically redirect to the <a href=\"../index.php\" >mkti.in</a> in <span id=\"timer\">15 seconds<span></p></div>";
 				echo $message;
 			}
 			else
 			{
-				$error = "<div id=\"register-login-text\"><br /><p>This email has already been registered.</p><br /><p>This page will automatically redirect to the homepage in <span id=\"timer\">15 seconds<span></p></div>";
+				$error = "<div id=\"register-login-text\"><br /><p>This email has already been registered.</p><br /><p>This page will automatically redirect to the <a href=\"../index.php\" >mkti.in</a> in <span id=\"timer\">15 seconds<span></p></div>";
 				echo $error;
 			}
 		}
@@ -76,14 +76,14 @@
 			else
 			{
 				header( "refresh:15;url=../index.php" );
-				$error = "<div id=\"register-login-text\"><p>Invalid username/password</p><br /><p>This page will automatically redirect to the homepage in <span id=\"timer\">15 seconds<span></p></div>";
+				$error = "<div id=\"register-login-text\"><p>Invalid username/password</p><br /><p>This page will automatically redirect to the <a href=\"../index.php\" >mkti.in</a> in <span id=\"timer\">15 seconds<span></p></div>";
 				echo $error;
 			}
 		}
 		else 
 		{
 			header( "refresh:15;url=../index.php" );
-			$error = "<div id=\"register-login-text\"><p>Invalid Page Requested</p><br /><p>This page will automatically redirect to the homepage in <span id=\"timer\">15 seconds<span></p></div>";
+			$error = "<div id=\"register-login-text\"><p>Invalid Page Requested</p><br /><p>This page will automatically redirect to the <a href=\"../index.php\" >mkti.in</a> in <span id=\"timer\">15 seconds<span></p></div>";
 			echo $error;
 		}
 	}
@@ -112,21 +112,21 @@
 			else
 			{
 				header( "refresh:15;url=../index.php" );	
-				$error = "<div id=\"register-login-text\"><p>Invalid/Expired confirmation code.</p><br /><p>This page will automatically redirect to the homepage in <span id=\"timer\">15 seconds<span></p></div>";
+				$error = "<div id=\"register-login-text\"><p>Invalid/Expired confirmation code.</p><br /><p>This page will automatically redirect to the <a href=\"../index.php\" >mkti.in</a> in <span id=\"timer\">15 seconds<span></p></div>";
 				echo $error;
 			}
 		}
 		else
 		{
 			header( "refresh:15;url=../index.php" );
-			$error = "<div id=\"register-login-text\"><p>Invalid Page Requested</p><br /><p>This page will automatically redirect to the homepage in <span id=\"timer\">15 seconds<span></p></div>";
+			$error = "<div id=\"register-login-text\"><p>Invalid Page Requested</p><br /><p>This page will automatically redirect to the <a href=\"../index.php\" >mkti.in</a> in <span id=\"timer\">15 seconds<span></p></div>";
 			echo $error;
 		}
 	}
 	else
 	{
 		header( "refresh:15;url=../index.php" );
-		$error = "<div id=\"register-login-text\"><p>Invalid Page Requested.</p><br /><p>This page will automatically redirect to the homepage in <span id=\"timer\">15 seconds<span></p></div>";
+		$error = "<div id=\"register-login-text\"><p>Invalid Page Requested.</p><br /><p>This page will automatically redirect to the <a href=\"../index.php\" >mkti.in</a> in <span id=\"timer\">15 seconds<span></p></div>";
 		echo $error;
 	}
 ?>

@@ -39,8 +39,8 @@ session_start();
 				    <form method="post" action="./include/dologin.php" id="loginForm">
 				        <div><input name="email" id="lemail" type="text" placeholder="Email"/></div>
 				        <div><input name="password" id="lpassword" type="password" placeholder="Password"/></div>
-				        <div><input name="signin" type="submit" value="Log In"/></div>
-				<!-- 	<div><a href="#" style="text-decoration: none; font-size: 12pt; color: blue;">Forgot Password</a></div> -->
+				        <div><input name="signin" id="signin" type="submit" value="Log In"/></div>
+<!--				 	<div><a href="./include/forgotpassword.php" style="text-decoration: none; font-size: 12pt; color: blue;">Forgot Password</a></div> -->
 				    </form>
 				</div>
 				<div id="register-dialog">
@@ -64,7 +64,17 @@ session_start();
 				<div id="logout-button"><a href="./include/logout.php">Sign Out</a></div>
 				<div id="welcome-bar">
 					<div>Hi, <?php echo $_SESSION['login_name']; ?></div>
-					<div>Reg No: <?php echo $_SESSION['user_id']; ?></div>
+					<div>Reg No: <?php
+							$id = $_SESSION['user_id'];
+							$ones = $id % 10;
+							$id = $id / 10;
+							$tens = $id % 10;
+							$id = $id / 10;
+							$hundreds = $id % 10;
+                            $id = $id / 10;
+                            $thousands = $id % 10;
+
+							echo "2013".$thousands.$hundreds.$tens.$ones; ?></div>
 				</div>
 				<?php
 					}
