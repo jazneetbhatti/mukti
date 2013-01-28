@@ -20,7 +20,7 @@ function MakeConfirmationMd5($email)
 
 function SendUserConfirmationEmail($email_id, $name, $confirmcode)
 {
-	$mailer = new PHPMailer();
+	$mailer = new PHPMailer(true);
 	
 	$mailer->IsSMTP();                                          // set mailer to use SMTP
 	$mailer->Host = "ssl://smtp.gmail.com";                     // specify main and backup server
@@ -40,7 +40,7 @@ function SendUserConfirmationEmail($email_id, $name, $confirmcode)
 	$mailer->Subject = "Confirm Your registration for MUKTI'13";
 	$confirm_url = GetAbsoluteURLFolder().'/dologin.php?code='.$confirmcode;
 	$mailer->Body ="Hello ".$name."\r\n\r\n".
-	"Thanks for registering for MUKTI'13"."\r\n".
+	"Thanks for registering for MUKTI'13\r\n".
 	"Please click the link below to confirm your registration.\r\n".
 	"$confirm_url\r\n".
 	"\r\n".
@@ -53,6 +53,41 @@ function SendUserConfirmationEmail($email_id, $name, $confirmcode)
 		return false;
 	}
 	return true;
+}
+
+function SendNewPassword($email_id, $name, $password)
+{
+    $mailer = new PHPMailer(true);
+    
+    $mailer->IsSMTP();                                          // set mailer to use SMTP
+    $mailer->Host = "ssl://smtp.gmail.com";                     // specify main and backup server
+    $mailer->Port = 465;                                        // set the port to use
+    $mailer->SMTPAuth = true;                                   // turn on SMTP authentication
+    $mailer->Username = "admin@mkti.in";                     // your SMTP username or your gmail username
+    $mailer->Password = "lug123nitdgp";                          // your SMTP password or your gmail password
+    $mailer->From = "no-reply@mkti.in";            //sender mail-id
+    $mailer->FromName = "Team Mukti";                       // Name to indicate where the email came from when the recepient received
+
+    $mailer->AddReplyTo("no-reply@mkti.in","Webmaster");     // Reply to this email
+    
+    $mailer->CharSet = 'utf-8';
+    $mailer->WordWrap = 50;                                     // set word wrap
+    
+    $mailer->AddAddress($email_id, $name);
+    $mailer->Subject = "New password for MUKTI'13";
+    $mailer->Body ="Hello ".$name."\r\n\r\n".
+    "Your new password for mkti.in is\r\n".
+    "$password\r\n".
+    "\r\n".
+    "Regards,\r\n".
+    "Team Mukti\r\n";
+    
+    if(!$mailer->Send())
+    {
+        $error = "Mailer Error: " . $mailer->ErrorInfo;
+        return false;
+    }
+    return true;
 }
 
 function ValidateRegistrationSubmission()

@@ -377,3 +377,30 @@ html, body, #container{
 	margin-left: -350px;
 }
 
+#forgot-form {
+	position: absolute;
+	width: 700px;
+	top: 30%;
+	left: 50%;
+	text-align: center;
+	margin-left: -350px;
+}
+
+#forgot-form form {
+	position: relative;
+	text-align: center;
+}
+
+#forgot-submit {
+	width: 300px !important;
+}
+
+#forgot-prompt {
+	padding-bottom: 20px;
+}
+
+#forgot-email {
+	margin-left: 12px;
+	margin-right: 12px;
+	width: 288px !important;
+}

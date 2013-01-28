@@ -40,7 +40,7 @@ session_start();
 				        <div><input name="email" id="lemail" type="text" placeholder="Email"/></div>
 				        <div><input name="password" id="lpassword" type="password" placeholder="Password"/></div>
 				        <div><input name="signin" id="signin" type="submit" value="Log In"/></div>
-<!--				 	<div><a href="./include/forgotpassword.php" style="text-decoration: none; font-size: 12pt; color: blue;">Forgot Password</a></div> -->
+				 	<div><a id = "forgot-password"href="./include/forgotpassword.php" style="text-decoration: none; font-size: 12pt; color: blue;">Forgot Password</a></div>
 				    </form>
 				</div>
 				<div id="register-dialog">

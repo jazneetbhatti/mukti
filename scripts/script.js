@@ -42,7 +42,7 @@ $(document).ready(function() {
   				$('#loginwrapper').hide();
   			}, 300);
   		}
-  	});
+  	});	
   }
 
   function setupRegistrationValidate() {
@@ -252,11 +252,17 @@ $(document).ready(function() {
 
 	function flashtext(){
 		var element = $('#happening-now-banner');
-		console.log(element.css('background-color'));
-    if( element.css('background-color') != 'rgb(255, 0, 0)'  )
+		//console.log(element.css('background-color'));
+    /*if( element.css('background-color') != 'rgb(255, 0, 0)'  )
 			element.animate({ 'background-color': 'red' }, 300 );		
 		else
-			element.animate({ 'background-color': 'black' }, 300 );		
+			element.animate({ 'background-color': 'black' }, 300 );*/
+		if (element.hasClass('red-background')) {
+			element.removeClass('red-background');
+		}
+		else {
+			element.addClass('red-background');
+		}
 	}
 
 	var intervalId, flashingId;

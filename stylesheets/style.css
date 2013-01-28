@@ -134,11 +134,15 @@
 #happening-now-banner {
 	margin: 0px 25px 0px 25px;
 	color: white;
-	background: black;
+	background-color: black;
 	border-radius: 10px;
 	padding-bottom: 2.5px;
 	text-align: center;
 	font: 10pt 'PaytoneOne';
+	transition: background-color 900ms;
+	-webkit-transition: background-color 900ms;
+	-moz-transition: background-color 900ms;
+	-o-transition: background-color 900ms;
 }
 
 #happening-now-content {
@@ -172,7 +176,8 @@
 	font: 32px 'PaytoneOne';
 }
 
-#content-body
+#content-body,
+#forgot-prompt
 {
 	color: #004020;
 	margin-left: 5px;
@@ -241,6 +246,10 @@
 	font: 12pt 'Monda-Regular';
 }
 
+.red-background {
+	background-color: red !important; 	
+}
+
 #login-dialog,
 #register-dialog {
 	background: white;
@@ -259,7 +268,8 @@
 #login-dialog input[type="text"],
 #login-dialog input[type="password"],
 #register-dialog input[type="text"],
-#register-dialog input[type="password"]
+#register-dialog input[type="password"],
+#forgot-email
 {
   position: relative;
   width: 80%;
@@ -281,7 +291,8 @@
 #login-dialog input[type="text"]:focus,
 #login-dialog input[type="password"]:focus,
 #register-dialog input[type="text"]:focus,
-#register-dialog input[type="password"]:focus
+#register-dialog input[type="password"]:focus,
+#forgot-email:focus
 {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -300,7 +311,8 @@
 }
 
 #login-dialog input[type="submit"],
-#register-dialog input[type="submit"]
+#register-dialog input[type="submit"],
+#forgot-submit
 {
   display: inline-block;
   *display: inline;
@@ -338,7 +350,8 @@
 }
 
 #login-dialog input[type="submit"]:hover,
-#register-dialog input[type="submit"]:hover
+#register-dialog input[type="submit"]:hover,
+#forgot-submit:hover
 {
  color: #333333;
   text-decoration: none;
@@ -359,3 +372,4 @@
 	color: #004020;
 	font: 14pt 'Monda-Regular';
 }
+
